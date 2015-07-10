@@ -50,29 +50,48 @@
 				var par = document.createElement("p")
 				par.textContent = "Hello World";
 				var mql = window.matchMedia("screen and (min-width:48em)");
-				if(mql.matches){
-					watch();
-				} else {
-					heading.style.height = '50px';
-					ul.insertBefore(logo, ul.firstChild);
-					main.appendChild(par);
+				
+				var append = function(mql){
+					if(!mql.matches){
+						heading.style.height = '50px';
+						ul.insertBefore(logo, ul.firstChild);
+						main.appendChild(par);
+					} else {
+						heading.style.height = '200px';
+						if(ul.contains(logo) || main.contains(par)){
+							ul.removeChild(ul.firstChild);
+							main.removeChild(par);
+						}
+					}
 				}
 
-				function watch(){
-					window.onscroll = function(){
-						var rectObject = heading.getBoundingClientRect();
-						console.log(rectObject.bottom);
-						if(rectObject.bottom <= 50){
-							if(!ul.contains(logo)){
-								ul.insertBefore(logo, ul.firstChild);
-							}
-						} else {
-							if(ul.contains(logo)){
-								ul.removeChild(ul.firstChild);
-							}
-						}
-					}	
+				window.onload = function(){
+					append(mql);
 				}
+
+				// On Window Resize
+				// If width < query -> set nav height, add logo, append special div
+				// If width > query -> set header height to 200 (original),
+				//						if logo and div exists, remove them
+				window.onresize = function(){
+					console.log("resize");
+					append(mql);
+				}
+
+				window.onscroll = function(){
+					console.log("scroll");
+					var rectObject = heading.getBoundingClientRect();
+					//console.log(rectObject.bottom);
+					if(rectObject.bottom <= 50){
+						if(!ul.contains(logo)){
+							ul.insertBefore(logo, ul.firstChild);
+						}
+					} else {
+						if(ul.contains(logo)){
+							ul.removeChild(ul.firstChild);
+						}
+					}
+				}	
 
 				
 			</script>

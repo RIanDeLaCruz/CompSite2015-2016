@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	height: 1200px;
+}
+nav {
+	position: fixed;
+	top: 0;
+	background-color: #ABCDEF;
+	width: 100%;
+	height: 100px;
+	/*padding: 20px;*/
+}
+header {
+	display: block;
+	height: 700px;
+	background-image: url('http://placehold.it/940x580');
+}
+ul {
+	display: block;
+	list-style-type: none;
+	margin: 40px auto;
+	padding: 0;
+	width: 768px;
+	height: 20px;
+	position: relative;
+}
+
+li {
+	display: inline-block;
+	width: 148px;
+	text-align: center;
+}
+#main {
+	height: 900px;
+	background-color: blue;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #CCCCCC;
+	border: 1px  solid #FFFFFF;
+	border-radius: 2px;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	width: 50%;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #navigation{
+    display: block;
+}
+
+
+@media screen and (max-width : 48em){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+		height: 32px;
+		background-color: #CCCCBB;
+		text-align: center;
+		text-decoration: none;
+		padding: 16px 16px 16px 0;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+		float: right;
+	}
+}

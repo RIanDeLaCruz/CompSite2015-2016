@@ -22,17 +22,82 @@
 				height: 200px;
 				background-image: url('http://placehold.it/940x580');
 			}
-			nav ul li {
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+
+			}
+			li {
 				display: inline-block;
+			}
+
+			/*Style 'show menu' label button and hide it by default*/
+			.show-menu {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-decoration: none;
+				color: #fff;
+				background: #19c589;
+				text-align: center;
+				padding: 10px 0;
+				display: none;
+				width: 50%;
+			}
+
+			/*Hide checkbox*/
+			input[type=checkbox]{
+			    display: none;
+			}
+
+			/*Show menu when invisible checkbox is checked*/
+			input[type=checkbox]:checked ~ #navigation{
+			    display: block;
+			}
+
+
+			@media screen and (max-width : 760px){
+				/*Make dropdown links appear inline*/
+				ul {
+					position: static;
+					display: none;
+				}
+				/*Create vertical spacing*/
+				li {
+					margin-bottom: 1px;
+				}
+				/*Make all menu links full width*/
+				ul li, li a {
+					width: 100%;
+					text-align: center;
+				}
+				/*Display 'show menu' link*/
+				.show-menu {
+					display:block;
+					float: right;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<header id="header">
-			<nav>
-				<ul type="none" id="navigation">
+			<nav id="nav_tag">
+				<label for="show-menu" class="show-menu">Show Menu</label>
+				<input type="checkbox" id="show-menu" role="button">
+				<!-- <ul id="navigation">
 					<li>Link One</li>
 					<li>Link Two</li>
+				</ul> -->
+				<ul id="navigation">
+					<li><a href="#">Home</a></li>
+					<li>
+						<a href="#">About ￬</a>
+					</li>
+					<li>
+						<a href="#">Portfolio ￬</a>
+					</li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -41,7 +106,8 @@
 		<footer>
 			<script type="text/javascript">
 				var heading = document.getElementById("header");
-				var main = document.getElementById("main"); 
+				var main = document.getElementById("main");
+				var nav_tag = document.getElementById("nav_tag");
 				var ul = document.getElementById("navigation");
 				var logo = document.createElement("li");
 				logo.innerHTML = "<img src='http://placehold.it/20x20'>";
@@ -54,12 +120,12 @@
 				var append = function(mql){
 					if(!mql.matches){
 						heading.style.height = '50px';
-						ul.insertBefore(logo, ul.firstChild);
+						nav_tag.insertBefore(logo, nav_tag.firstChild);
 						main.appendChild(par);
 					} else {
 						heading.style.height = '200px';
-						if(ul.contains(logo) || main.contains(par)){
-							ul.removeChild(ul.firstChild);
+						if(nav_tag.contains(logo) || main.contains(par)){
+							nav_tag.removeChild(nav_tag.firstChild);
 							main.removeChild(par);
 						}
 					}

@@ -1,52 +1,170 @@
-body {
+/*
+ * BLUE: #49C6E5;
+ * ORANGE: #F75B2C;
+ * D.GRAY: #D4D4D4;
+ * L.GRAY: #F2F2F2;
+ * BLACK: #050505;
+ *
+ */
+
+body, h1 {
 	margin: 0;
-	height: 1200px;
 }
-nav {
-	position: fixed;
-	top: 0;
-	background-color: #ABCDEF;
-	width: 100%;
-	height: 100px;
-	/*padding: 20px;*/
-}
+
 header {
 	display: block;
 	height: 700px;
 	background-image: url('http://placehold.it/940x580');
 }
-ul {
-	display: block;
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #49C6E5;
+	/*padding: 20px;*/
+}
+
+#head_content {
+	height: 700px;
+	margin: 0;
+	background-color: blue;
+}
+
+nav ul {
+	/*display: block;*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	list-style-type: none;
-	margin: 40px auto;
+	margin: 2em auto;
 	padding: 0;
 	width: 768px;
 	height: 20px;
 	position: relative;
 }
 
-li {
+nav ul li {
 	display: inline-block;
-	width: 148px;
 	text-align: center;
 }
-#main {
-	height: 900px;
-	background-color: blue;
+
+li a {
+	text-decoration: none;
 }
 
+.dynamic_div {
+	display: block;
+	padding: 1em;
+	text-align: left;
+	margin: 0;
+	height: 400px;
+}
+
+#main {
+	/*margin: -10px 0 0;*/
+	text-align: center;
+}
+
+.content_div {
+	padding: 2em;
+}
+
+.flex-container {
+	margin: 2.5em 0;
+	padding: 1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.circle {
+	width: 20em;
+	height: 20em;
+	border: 1px  solid #000;
+	border-radius: 50%;
+	float: left;
+	text-align: center;
+	display: table;
+}
+
+.circle p {
+	display: table-cell;
+	/*height: 300px;*/
+	vertical-align: middle;
+}
+
+#what_we_offer {
+	background-color: #F2F2F2;
+	padding: 4em 2em;
+}
+
+#sponsors_div {
+	background-color: #D4D4D4;
+}
+
+
+/* 
+ * ---------------
+ * Services Page
+ * --------------- 
+ *
+ */
+.rates {
+	width: 20em;
+	border: 1px  solid #000;
+	border-radius: 4px;
+	float: left;
+	text-align: center;
+	display: table; 
+}
+
+.rates p:not(:last-of-type) {
+	display: block;
+	padding: 1em;
+	border-bottom: 1px solid;
+}
+
+.showcase {
+	display: block;
+	width: 320px;
+	height: 240px;
+	background-color: green;
+	margin: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * ----------------
+ * Menu Toggle Style
+ * --------------- 
+ */
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
-	color: #fff;
-	background: #CCCCCC;
-	border: 1px  solid #FFFFFF;
+	color: #F2F2F2;
+	background: #49C6E5;
+	border: 1px  solid #F2F2F2;
 	border-radius: 2px;
 	text-align: center;
-	padding: 10px 0;
+	padding: 0.5em 1em;
 	display: none;
-	width: 50%;
+	width: 5em;
 }
 
 /*Hide checkbox*/
@@ -56,32 +174,53 @@ input[type=checkbox]{
 
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #navigation{
-    display: block;
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
+footer {
+	height: 200px;
+}
 
 @media screen and (max-width : 48em){
 	/*Make dropdown links appear inline*/
-	ul {
+	nav ul {
 		position: static;
 		display: none;
-	}
-	/*Create vertical spacing*/
-	li {
-		margin-bottom: 1px;
-	}
-	/*Make all menu links full width*/
-	ul li, li a {
 		width: 100%;
-		height: 32px;
-		background-color: #CCCCBB;
+		margin-top: 4em;
+	}
+	
+	li {
+		display: block;
+		width: 100%;
+		background-color: #49C6E5;
+		padding: 1em 1em 1em 0;
+	}
+	
+	/*Make all menu links full width*/
+	li a {
 		text-align: center;
 		text-decoration: none;
-		padding: 16px 16px 16px 0;
+	}
+
+	li:hover {
+		background-color: #F75B2C;
+	}
+
+	li:last-child {
+		box-shadow: 0 8px 4px rgba(0,0,0,.25);
 	}
 	/*Display 'show menu' link*/
 	.show-menu {
 		display:block;
 		float: right;
+		margin: 1em 1em 0 0;
+	}
+
+	.circle {
+		width: 100%;
+		border-radius:0px;
 	}
 }

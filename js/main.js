@@ -28,21 +28,31 @@ switch( title ){
 	case "Services":
 		par.textContent = 'SERVICES ' + text;
 		break;
-	// case "Index":
-	// 	head_content.innerHTML = 'INDEX ' + text;
-	// 	break;
-	// case "Index":
-	// 	head_content.innerHTML = 'INDEX ' + text;
-	// 	break;
-	// case "Index":
-	// 	head_content.innerHTML = 'INDEX ' + text;
-	// 	break;
-	// case "Index":
-	// 	head_content.innerHTML = 'INDEX ' + text;
-	// 	break;
+	case "Projects":
+		par.innerHTML = 'PROJECTS ' + text;
+		break;
+	case "About Us":
+		par.innerHTML = 'ABOUT US ' + text;
+		break;
+	case "Contact Us":
+		par.innerHTML = 'CONTACT US ' + text;
+		break;
+	case "Portfolio":
+		par.innerHTML = 'PORTFOLIO ' + text;
+		break;
 }
 
 var mql = window.matchMedia("screen and (min-width:48em)");
+
+var CONST_NAV_HEIGHT = nav_tag.offsetHeight;
+var CONST_HEAD_HEIGHT = head_content.offsetHeight;
+console.log(CONST_HEAD_HEIGHT)
+
+var rectObjectValue = (function(height, navHeight){
+	return {
+		val : height+navHeight
+	};
+})(CONST_HEAD_HEIGHT, CONST_NAV_HEIGHT);
 
 console.log(head_content.parentNode.nodeName);
 /*
@@ -52,12 +62,12 @@ console.log(head_content.parentNode.nodeName);
  */
 var append = function(mql){
 	if(!mql.matches){
-		heading.style.height = '80px';
+		heading.style.height = CONST_NAV_HEIGHT+'px';
+		title != "Contact Us" ? main.insertBefore(par,main.firstChild) : console.log("");
 		nav_tag.insertBefore(logo, nav_tag.firstChild);
 		heading.contains(head_content) ? heading.removeChild(head_content) : console.log("null");
-		main.insertBefore(par,main.firstChild);
 	} else {
-		title =="Contact Us" ? heading.style.height = '80px' : heading.style.height = '700px';
+		title =="Contact Us" ? heading.style.height = '0': heading.style.height = CONST_HEAD_HEIGHT+'px';
 		if(nav_tag.contains(logo) || main.contains(par)){
 			nav_tag.removeChild(nav_tag.firstChild);
 			main.contains(par) ? main.removeChild(par) : console.log("null");
@@ -69,10 +79,10 @@ var append = function(mql){
 window.onload = function(){
 	append(mql);
 	var rectObject = heading.getBoundingClientRect();
-	if(rectObject.bottom == 700){
+	if(rectObject.bottom == rectObjectValue.val || rectObject.bottom == CONST_NAV_HEIGHT){
 		nav_tag.style["box-shadow"]="none";
 	} else {
-		title =="Contact Us" ? nav_tag.style["box-shadow"]="none" : nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
+		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
 	}
 }
 
@@ -96,33 +106,13 @@ window.onscroll = function(){
 	* 	value → amount of box already hidden as calculated by getBoundingClientRect()
 	*	
 	*/
-	// if(rectObject.bottom <= 500){
-	// 	nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
-	// 	if(!nav_tag.contains(logo)){
-	// 		nav_tag.insertBefore(logo, nav_tag.firstChild);
-	// 		if(mql.matches){
-	// 			ul.style.float="right";
-	// 		} else {
-	// 			console.log("HERE");
-	// 		}
-	// 	}
-	// } else if(rectObject.bottom == 80 && title =="Contact Us") {
-	// 	console.log("HI");
-	// } else {
-	// 	nav_tag.style["box-shadow"]= "none";
-	// 	if(nav_tag.contains(logo)){
-	// 		nav_tag.removeChild(nav_tag.firstChild);
-	// 		ul.style.float="none";
-	// 	}
-	// }
-	if(rectObject.bottom == 80 && title =="Contact Us") {
+	if(rectObject.bottom == CONST_NAV_HEIGHT && !mql.matches) {
+		// Mobile Style
 		nav_tag.style["box-shadow"]= "none";
-		if(nav_tag.contains(logo)){
-			nav_tag.removeChild(nav_tag.firstChild);
-			ul.style.float="none";
-		}
-	} else if( rectObject.bottom <= 500){
-		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
+		ul.style.float="none";
+	} else if( rectObject.bottom < rectObjectValue.val){
+		title == "Contact Us" && rectObject.bottom == CONST_NAV_HEIGHT ? (nav_tag.style["box-shadow"]="none", ul.style.float="none") : nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
+		// Full Width Style
 		if(!nav_tag.contains(logo)){
 			nav_tag.insertBefore(logo, nav_tag.firstChild);
 			if(mql.matches){
@@ -132,6 +122,7 @@ window.onscroll = function(){
 			}
 		}
 	} else {
+		// Full Width Style at Beginning
 		nav_tag.style["box-shadow"]= "none";
 		if(nav_tag.contains(logo)){
 			nav_tag.removeChild(nav_tag.firstChild);

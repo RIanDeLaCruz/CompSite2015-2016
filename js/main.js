@@ -12,6 +12,9 @@ logo.style.left="20px";
 
 var style = window.getComputedStyle(heading, null).getPropertyValue("height");
 
+var flex_items_reverse = document.getElementsByClassName("reverse_flex");
+console.log(flex_items_reverse.length);
+
 var par = document.createElement("p");
 // par.textContent = "Hello World";
 par.setAttribute("class", "dynamic_div");
@@ -46,7 +49,6 @@ var mql = window.matchMedia("screen and (min-width:48em)");
 
 var CONST_NAV_HEIGHT = nav_tag.offsetHeight;
 var CONST_HEAD_HEIGHT = head_content.offsetHeight;
-console.log(CONST_HEAD_HEIGHT)
 
 var rectObjectValue = (function(height, navHeight){
 	return {
@@ -55,6 +57,7 @@ var rectObjectValue = (function(height, navHeight){
 })(CONST_HEAD_HEIGHT, CONST_NAV_HEIGHT);
 
 console.log(head_content.parentNode.nodeName);
+
 /*
  *	Append Function
  *	@param mql Media Query List
@@ -63,11 +66,13 @@ console.log(head_content.parentNode.nodeName);
 var append = function(mql){
 	if(!mql.matches){
 		heading.style.height = CONST_NAV_HEIGHT+'px';
-		title != "Contact Us" ? main.insertBefore(par,main.firstChild) : console.log("");
+		// title != "Contact Us" ? main.insertBefore(par,main.firstChild) : console.log("");
+		main.insertBefore(par,main.firstChild);
 		nav_tag.insertBefore(logo, nav_tag.firstChild);
 		heading.contains(head_content) ? heading.removeChild(head_content) : console.log("null");
+		// reverseFlexClass(flex_items_reverse);
 	} else {
-		title =="Contact Us" ? heading.style.height = '0': heading.style.height = CONST_HEAD_HEIGHT+'px';
+		// title =="Contact Us" ? head_content.style.height = '0': head_content.style.height = CONST_HEAD_HEIGHT+'px';
 		if(nav_tag.contains(logo) || main.contains(par)){
 			nav_tag.removeChild(nav_tag.firstChild);
 			main.contains(par) ? main.removeChild(par) : console.log("null");
@@ -76,8 +81,35 @@ var append = function(mql){
 	}
 }
 
+var reverseFlexClass = function(arr, mql){
+	var myArr = arr;
+	
+	if(!mql.matches){
+		for (var i = 0; i<myArr.length; i++){
+			if(myArr[i].classList.contains("flag")){
+				myArr[i].classList.add("order_one");
+				myArr[i].classList.remove("order_two");
+			} else {
+				myArr[i].classList.add("order_two");
+				myArr[i].classList.remove("order_one");
+			}
+		}
+	} else {
+		for (var i = 0; i<myArr.length; i++){
+			if(myArr[i].classList.contains("flag")){
+				myArr[i].classList.add("order_two");
+				myArr[i].classList.remove("order_one");
+			} else {
+				myArr[i].classList.add("order_one");
+				myArr[i].classList.remove("order_two");
+			}
+		}
+	}
+}
+
 window.onload = function(){
 	append(mql);
+	reverseFlexClass(flex_items_reverse, mql);
 	var rectObject = heading.getBoundingClientRect();
 	if(rectObject.bottom == rectObjectValue.val || rectObject.bottom == CONST_NAV_HEIGHT){
 		nav_tag.style["box-shadow"]="none";
@@ -93,13 +125,14 @@ window.onload = function(){
  */
 window.onresize = function(){
 	console.log("resize");
-	append(mql); 
+	append(mql);
+	reverseFlexClass(flex_items_reverse, mql);
+
 }
 
 window.onscroll = function(){
-	console.log("scroll");
 	var rectObject = heading.getBoundingClientRect();
-	console.log(rectObject.bottom);
+
 	/*
 	*
 	*	rectObject.bottom <= value

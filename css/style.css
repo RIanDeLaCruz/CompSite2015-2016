@@ -7,13 +7,19 @@
  *
  */
 
+@import url("type.css");
+
 body, h1 {
 	margin: 0;
 }
 
+footer {
+	background-color: #F75B2C;
+}
+
 header {
 	display: block;
-	background-image: url('http://placehold.it/940x580');
+	/*background-image: url('http://placehold.it/940x580');*/
 }
 
 nav {
@@ -26,14 +32,28 @@ nav {
 }
 
 #head_content {
-	height: 600px;
+	min-height: 600px;
 	margin: 80px 0 0 0;
-	/*padding-top: 80px;*/
-	background-color: blue;
+	/*padding: 0;*/
+	background-color: #49C6E5;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
+
+.flex-head {
+	text-align: center;
+	margin: .5em 0;
+	display: block;
+	height: 1em;
+}
+
+#head_content .content_div article {
+	margin: 0;
+	padding: 0;
+	width: 40em;
+}
+
 
 nav ul {
 	/*display: block;*/
@@ -59,11 +79,47 @@ li a {
 
 .dynamic_div {
 	display: block;
-	padding: 1em;
+	padding: 1.5em 2em;
 	text-align: left;
 	margin: 0;
-	height: 400px;
+	background-color: #49C6E5;
 }
+
+/*
+ * ---------------
+ * HELPER CLASSES
+ * ---------------
+ *
+ */
+
+ .content {
+ 	width: 30em;
+ 	text-align: left;
+ 	align-self: center;
+ }
+
+ .order_one {
+ 	order:1;
+ }
+
+ .order_two {
+ 	order:2;
+ }
+
+ .flex-container-column {
+ 	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+ 	flex-direction:column; 
+ 	align-items: center;
+ 	padding: 0 1em;
+ 	width:20em; 
+ }
+
+ .content-column {
+ 	width: 15em;
+ 	text-align: center;
+ }
 
 #main {
 	/*margin: -10px 0 0;*/
@@ -87,6 +143,7 @@ li a {
 	height: 20em;
 	border: 1px  solid #000;
 	border-radius: 50%;
+	margin: 1em 1em;
 	float: left;
 	text-align: center;
 	display: table;
@@ -99,12 +156,12 @@ li a {
 }
 
 #what_we_offer {
-	background-color: #F2F2F2;
+	/*background-color: #F2F2F2;*/
 	padding: 4em 2em;
 }
 
 #sponsors_div {
-	background-color: #D4D4D4;
+	background-color: #F2F2F2;
 }
 
 
@@ -166,12 +223,6 @@ li a {
 
  .flex-justify-center {
  	justify-content: center;
- }
-
- .project_content {
- 	width: 30em;
- 	text-align: left;
- 	align-self: center;
  }
 
 /* 

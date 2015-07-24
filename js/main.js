@@ -20,6 +20,8 @@ var par = document.createElement("p");
 par.setAttribute("class", "dynamic_div");
 
 var head_content = document.getElementById("head_content");
+var head_content_div = document.getElementById("head_content_div");
+// console.log(head_content_div)
 var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
 
 var title = document.title;
@@ -48,9 +50,8 @@ switch( title ){
 var mql = window.matchMedia("screen and (min-width:48em)");
 
 var CONST_NAV_HEIGHT = nav_tag.offsetHeight;
-console.log(CONST_NAV_HEIGHT)
 var CONST_HEAD_HEIGHT = head_content.offsetHeight;
-console.log(CONST_HEAD_HEIGHT)
+
 var rectObjectValue = (function(height, navHeight){
 	return {
 		val : height+navHeight
@@ -66,19 +67,24 @@ console.log(head_content.parentNode.nodeName);
  */
 var append = function(mql){
 	if(!mql.matches){
-		heading.style.height = CONST_NAV_HEIGHT+'px';
+		// heading.style.height = CONST_NAV_HEIGHT+'px';
 		// title != "Contact Us" ? main.insertBefore(par,main.firstChild) : console.log("");
-		main.insertBefore(par,main.firstChild);
+		// main.insertBefore(par,main.firstChild);
+		head_content.appendChild(par);
 		nav_tag.insertBefore(logo, nav_tag.firstChild);
-		heading.contains(head_content) ? heading.removeChild(head_content) : console.log("null");
-		// reverseFlexClass(flex_items_reverse);
+		// heading.contains(head_content) ? (heading.removeChild(head_content), console.log("remove")) : console.log("no heading");
+		head_content.contains(head_content_div) ? head_content.removeChild(head_content_div) : console.log("no heading");
 	} else {
 		// title =="Contact Us" ? head_content.style.height = '0': head_content.style.height = CONST_HEAD_HEIGHT+'px';
-		if(nav_tag.contains(logo) || main.contains(par)){
+		// if(nav_tag.contains(logo) || main.contains(par)){
+		if(nav_tag.contains(logo) || head_content.contains(par)){	
 			nav_tag.removeChild(nav_tag.firstChild);
-			main.contains(par) ? main.removeChild(par) : console.log("null");
+			// main.contains(par) ? main.removeChild(par) : console.log("no par MQL ORIGINAL MATCH");
+			head_content.contains(par) ? head_content.removeChild(par) : console.log("no par MQL ORIGINAL MATCH");
 		}
-		heading.appendChild(head_content);
+		head_content.appendChild(head_content_div)
+		// heading.appendChild(head_content);
+		console.log("DOES THIS HAPPEN")
 	}
 }
 
@@ -148,7 +154,7 @@ window.onscroll = function(){
 		ul.style.float="none";
 		console.log("ON SCROLL, MOBILE");
 	} else if( Math.round(rectObject.bottom) < rectObjectValue.val){
-		title == "Contact Us" && rectObject.bottom == CONST_NAV_HEIGHT ? (nav_tag.style["box-shadow"]="none", ul.style.float="none") : nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
+		title == "Contact Us" && Math.round(rectObject.bottom) == CONST_NAV_HEIGHT ? (nav_tag.style["box-shadow"]="none", ul.style.float="none") : nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
 		// Full Width Style
 		if(!nav_tag.contains(logo)){
 			nav_tag.insertBefore(logo, nav_tag.firstChild);

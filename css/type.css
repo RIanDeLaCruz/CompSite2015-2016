@@ -1,7 +1,7 @@
 body {
-	font-family: Helvetica LT Std;
+	font-family: Helvetica LT Std, Arial, sans-serif;
 }
 
-nav, nav a:visited {
+nav a, nav a:visited {
 	color: white;
 }

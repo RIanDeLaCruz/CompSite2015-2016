@@ -48,8 +48,9 @@ switch( title ){
 var mql = window.matchMedia("screen and (min-width:48em)");
 
 var CONST_NAV_HEIGHT = nav_tag.offsetHeight;
+console.log(CONST_NAV_HEIGHT)
 var CONST_HEAD_HEIGHT = head_content.offsetHeight;
-
+console.log(CONST_HEAD_HEIGHT)
 var rectObjectValue = (function(height, navHeight){
 	return {
 		val : height+navHeight
@@ -111,7 +112,8 @@ window.onload = function(){
 	append(mql);
 	reverseFlexClass(flex_items_reverse, mql);
 	var rectObject = heading.getBoundingClientRect();
-	if(rectObject.bottom == rectObjectValue.val || rectObject.bottom == CONST_NAV_HEIGHT){
+	
+	if(Math.round(rectObject.bottom) == rectObjectValue.val || rectObject.bottom == CONST_NAV_HEIGHT){
 		nav_tag.style["box-shadow"]="none";
 	} else {
 		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
@@ -132,6 +134,7 @@ window.onresize = function(){
 
 window.onscroll = function(){
 	var rectObject = heading.getBoundingClientRect();
+	// console.log(rectObject.bottom + "  " + rectObjectValue.val + "ADDING SHADOW NOW");
 
 	/*
 	*
@@ -139,23 +142,26 @@ window.onscroll = function(){
 	* 	value → amount of box already hidden as calculated by getBoundingClientRect()
 	*	
 	*/
-	if(rectObject.bottom == CONST_NAV_HEIGHT && !mql.matches) {
+	if(Math.round(rectObject.bottom) == CONST_NAV_HEIGHT && !mql.matches) {
 		// Mobile Style
 		nav_tag.style["box-shadow"]= "none";
 		ul.style.float="none";
-	} else if( rectObject.bottom < rectObjectValue.val){
+		console.log("ON SCROLL, MOBILE");
+	} else if( Math.round(rectObject.bottom) < rectObjectValue.val){
 		title == "Contact Us" && rectObject.bottom == CONST_NAV_HEIGHT ? (nav_tag.style["box-shadow"]="none", ul.style.float="none") : nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
 		// Full Width Style
 		if(!nav_tag.contains(logo)){
 			nav_tag.insertBefore(logo, nav_tag.firstChild);
 			if(mql.matches){
 				ul.style.float="right";
+				console.log("ON SCROLL, AFTER APPEND MQL MATCH");
 			} else {
-				console.log("HERE");
+				console.log("ON SCROLL, AFTER APPEND MQL NOT MATCH");
 			}
 		}
 	} else {
 		// Full Width Style at Beginning
+		console.log("ON SCROLL, FULL WIDTH STYLE Beginning");
 		nav_tag.style["box-shadow"]= "none";
 		if(nav_tag.contains(logo)){
 			nav_tag.removeChild(nav_tag.firstChild);

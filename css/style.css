@@ -40,6 +40,9 @@ nav {
 	flex-flow: row wrap;
 	justify-content: center;
 }
+#head_content_div {
+	width: 100%;
+}
 
 .flex-head {
 	text-align: center;
@@ -128,28 +131,30 @@ li a {
 }
 
 .content_div {
-	padding: 2em;
+	padding: 2em 0;
 }
 
 .flex-container {
-	/*margin: 2.5em 0;*/
-	padding: 1em;
-	min-width: 48em;
-	max-width: 80em;
+	margin: 2.5em auto;
+	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .circle {
-	width: 20em;
-	height: 20em;
+	max-width: 20em;
+	max-height: 20em;
+	min-width: 16em;
+	min-height: 16em;
+	padding: 1em 0.5em;
 	border: 1px  solid #000;
 	border-radius: 50%;
 	margin: 1em 1em;
 	float: left;
 	text-align: center;
 	display: table;
+	flex: 0 1;
 }
 
 .circle p {
@@ -160,10 +165,11 @@ li a {
 
 #what_we_offer {
 	/*background-color: #F2F2F2;*/
-	padding: 4em 2em;
+	padding: 4em 1em;
 }
 
 #sponsors_div {
+	padding: 4em 0;
 	background-color: #F2F2F2;
 }
 
@@ -303,7 +309,7 @@ footer {
 	}
 
 	.circle {
-		width: 100%;
+		/*width: 100%;*/
 		border-radius:0px;
 	}
 

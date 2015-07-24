@@ -101,7 +101,9 @@ var reverseFlexClass = function(arr, mql){
 				myArr[i].classList.remove("order_one");
 			}
 		}
+		console.log("flex mql match")
 	} else {
+		console.log("flex mql NOT match")
 		for (var i = 0; i<myArr.length; i++){
 			if(myArr[i].classList.contains("flag")){
 				myArr[i].classList.add("order_two");
@@ -116,7 +118,8 @@ var reverseFlexClass = function(arr, mql){
 
 window.onload = function(){
 	append(mql);
-	reverseFlexClass(flex_items_reverse, mql);
+	var flexMQL = window.matchMedia("screen and (min-width:60em)");
+	reverseFlexClass(flex_items_reverse, flexMQL);
 	var rectObject = heading.getBoundingClientRect();
 	
 	if(Math.round(rectObject.bottom) == rectObjectValue.val || rectObject.bottom == CONST_NAV_HEIGHT){
@@ -134,7 +137,8 @@ window.onload = function(){
 window.onresize = function(){
 	console.log("resize");
 	append(mql);
-	reverseFlexClass(flex_items_reverse, mql);
+	var flexMQL = window.matchMedia("screen and (min-width:60em)");
+	reverseFlexClass(flex_items_reverse, flexMQL);
 
 }
 

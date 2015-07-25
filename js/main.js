@@ -103,9 +103,7 @@ var reverseFlexClass = function(arr, mql){
 				myArr[i].classList.remove("order_one");
 			}
 		}
-		console.log("flex mql match")
 	} else {
-		console.log("flex mql NOT match")
 		for (var i = 0; i<myArr.length; i++){
 			if(myArr[i].classList.contains("flag")){
 				myArr[i].classList.add("order_two");
@@ -126,7 +124,7 @@ window.onload = function(){
 
 	CONST_HEAD_HEIGHT = head_content.offsetHeight;
 	var val = rectObjectValue(CONST_HEAD_HEIGHT,CONST_NAV_HEIGHT).val
-	console.log(rectObject.bottom + "  " + val + "ADDING SHADOW NOW");
+
 	if(Math.round(rectObject.bottom) == val || rectObject.bottom == CONST_NAV_HEIGHT){
 		nav_tag.style["box-shadow"]="none";
 	} else {
@@ -140,17 +138,21 @@ window.onload = function(){
  *					if logo and div exists, remove them
  */
 window.onresize = function(){
-	console.log("resize");
-	append(mql);
-	var flexMQL = window.matchMedia("screen and (min-width:60em)");
-	reverseFlexClass(flex_items_reverse, flexMQL);
+	console.log("resize  " + mql.matches);
+
+	var rectObject = heading.getBoundingClientRect();
+	var val = rectObjectValue(CONST_HEAD_HEIGHT,CONST_NAV_HEIGHT).val
 
 	var appendedLogo = document.getElementById("logo");
-	if((!(ul.style.float == "right") || ul.style.float=="none") && !mql.matches){
+	if(mql.matches == false){
 		if(nav_tag.contains(appendedLogo)){
 			nav_tag.removeChild(appendedLogo);
 		}
 	}
+
+	append(mql);
+	var flexMQL = window.matchMedia("screen and (min-width:60em)");
+	reverseFlexClass(flex_items_reverse, flexMQL);
 
 }
 
@@ -158,7 +160,7 @@ window.onscroll = function(){
 	var rectObject = heading.getBoundingClientRect();
 	CONST_HEAD_HEIGHT = head_content.offsetHeight;
 	var val = rectObjectValue(CONST_HEAD_HEIGHT,CONST_NAV_HEIGHT).val
-	console.log(rectObject.bottom + "  " + val + "ADDING SHADOW NOW");
+	console.log(rectObject.bottom + "  " + val + "  " + CONST_NAV_HEIGHT + " ADDING SHADOW NOW");
 
 	/*
 	*
@@ -166,16 +168,17 @@ window.onscroll = function(){
 	* 	value → amount of box already hidden as calculated by getBoundingClientRect()
 	*	
 	*/
-	if(Math.round(rectObject.bottom) == CONST_NAV_HEIGHT) {
+	// if(Math.round(rectObject.bottom) == CONST_NAV_HEIGHT) {
 		
-		// TOP OF PAGE
-		nav_tag.style["box-shadow"]= "none";
-		ul.style.float="none";
+	// 	// TOP OF PAGE
+	// 	nav_tag.style["box-shadow"]= "none";
+	// 	ul.style.float="none";
 
-		// CHECK IF MOBILE
-		mql.matches ? nav_tag.insertBefore(logo, nav_tag.firstChild): nav_tag.removeChild(nav_tag.firstChild);
+	// 	// CHECK IF MOBILE
+	// 	mql.matches ? nav_tag.insertBefore(logo, nav_tag.firstChild): nav_tag.removeChild(nav_tag.firstChild);
 
-	} else if( Math.round(rectObject.bottom) < val){
+	// } else 
+	if( Math.round(rectObject.bottom) < val){
 		
 		// AFTER SCROLL
 		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)"

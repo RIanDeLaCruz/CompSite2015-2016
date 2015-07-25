@@ -346,4 +346,8 @@ footer {
 		width: 100%;
 		border-radius:5px;	
 	}
+
+	.avp_container {
+		display: none;
+	}
 }

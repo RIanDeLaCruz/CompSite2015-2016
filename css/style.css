@@ -9,7 +9,7 @@
 
 @import url("type.css");
 
-body, h1 {
+body, h1, p {
 	margin: 0;
 }
 
@@ -31,18 +31,15 @@ nav {
 }
 
 #head_content {
-	min-height: 500px;
+	min-height: 600px;
 	margin: 80px 0 0 0;
 	/*padding: 0;*/
-	/*background-color: #49C6E5;*/
+	background-color: #49C6E5;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	background-image: url('../images/IndexImage_v2.jpg');
-	background-size: cover;
-	background-position:0 -80px;
-	overflow: hidden;
 }
+
 #head_content_div {
 	width: 100%;
 }
@@ -165,6 +162,13 @@ li a {
 	vertical-align: middle;
 }
 
+.circle_icon {
+	border: 1px  solid #000;
+	border-radius: 50%;
+	width: 6em;
+	height: 6em;
+}
+
 #what_we_offer {
 	/*background-color: #F2F2F2;*/
 	padding: 4em 1em;
@@ -235,6 +239,29 @@ li a {
  .flex-justify-center {
  	justify-content: center;
  }
+
+
+/* 
+ * ----------------
+ * About Us Page
+ * --------------- 
+ */
+
+.col-2 {
+	display:inline-block; width:48%;
+}
+
+.col-3 {
+	display:inline-block; width:30%;
+}
+
+.avp_container {
+	height:6em; display: table;
+}
+
+.avp_text {
+	display: table-cell;vertical-align: middle;
+}
 
 /* 
  * ----------------

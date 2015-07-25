@@ -6,10 +6,10 @@ var nav_tag = document.getElementById("nav_tag");
 var ul = document.getElementById("navigation");
 var logo = document.createElement("a");
 logo.setAttribute("id", "logo");
-logo.innerHTML = "<a href='index.html'><img src='http://placehold.it/20x20'></a>";
+logo.innerHTML = "<a href='index.html'><img src='images/newCompSAtGear.png' width='40px' height='40px'></a>";
 logo.style.position="fixed";
-logo.style.top="20px";
-logo.style.left="20px";
+logo.style.top="15px";
+logo.style.left="10vw";
 
 var style = window.getComputedStyle(heading, null).getPropertyValue("height");
 
@@ -76,10 +76,10 @@ var append = function(mql){
 	if(mql.matches){ 
 
 		// THIS IS MOBILE SIZE
-		head_content.appendChild(par);
 		nav_tag.insertBefore(logo, nav_tag.firstChild);
 		
 		head_content.contains(head_content_div) ? head_content.removeChild(head_content_div) : console.log("no heading");
+		title=="Contact Us" ? console.log("no heading"):head_content.appendChild(par);
 	} else {
 
 		// DESKTOP
@@ -139,6 +139,8 @@ window.onload = function(){
  */
 window.onresize = function(){
 	console.log("resize  " + mql.matches);
+	var last = head_content.lastChild;
+	title=="Contact Us" && !head_content.contains(head_content_div) ? head_content.insertBefore(head_content_div, head_content.firstChild.nextSibling.nextSibling):console.log("no heading");
 
 	var rectObject = heading.getBoundingClientRect();
 	var val = rectObjectValue(CONST_HEAD_HEIGHT,CONST_NAV_HEIGHT).val
@@ -186,6 +188,7 @@ window.onscroll = function(){
 		// CHECK IF DESKTOP
 		!mql.matches ? (
 				ul.style.float="right",
+				ul.classList.add("head_margin"),
 				nav_tag.insertBefore(logo, nav_tag.firstChild)
 			) : (
 				console.log("null")
@@ -197,7 +200,7 @@ window.onscroll = function(){
 		nav_tag.style["box-shadow"]= "none";
 		
 		// CHECK IF MOBILE
-		mql.matches ? (nav_tag.insertBefore(logo, nav_tag.firstChild)): (nav_tag.removeChild(nav_tag.firstChild), ul.style.float="none", console.log("remove"));		
+		mql.matches ? (nav_tag.insertBefore(logo, nav_tag.firstChild)): (nav_tag.removeChild(nav_tag.firstChild), ul.style.float="none", ul.classList.remove("head_margin"), console.log("remove"));		
 		
 	}
 }	

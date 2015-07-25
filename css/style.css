@@ -26,8 +26,17 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 80px;
+	padding-right: 2em;
 	background-color: #49C6E5;
 	/*padding: 20px;*/
+}
+
+textarea {
+	resize:none;
+}
+
+.head_margin {
+	margin-right: 2em;	
 }
 
 #head_content {
@@ -44,11 +53,22 @@ nav {
 	width: 100%;
 }
 
+.gradient_head {
+	background: #49c6e5; /* Old browsers */
+	background: -moz-linear-gradient(top, #49c6e5 0%, #ffffff 20%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#49c6e5), color-stop(20%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #49c6e5 0%,#ffffff 20%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #49c6e5 0%,#ffffff 20%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #49c6e5 0%,#ffffff 20%); /* IE10+ */
+	background: linear-gradient(to bottom, #49c6e5 0%,#ffffff 20%); /* W3C */
+}
+
 .flex-head {
 	text-align: center;
 	margin: .5em 0;
 	display: block;
 	height: 1em;
+	width: 100%;
 }
 
 #head_content .content_div article {
@@ -167,6 +187,25 @@ li a {
 	border-radius: 50%;
 	width: 6em;
 	height: 6em;
+}
+
+.rectangle {
+	max-width: 20em;
+	max-height: 20em;
+	min-width: 12em;
+	min-height: 12em;
+	padding: 1em 0.5em;
+	border: 1px  solid #000;
+	margin: 1em 1em;
+	float: left;
+	text-align: center;
+	display: table;
+	flex: 1 0 auto;
+}
+
+.rectangle p {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #what_we_offer {

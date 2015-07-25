@@ -19,7 +19,6 @@ footer {
 
 header {
 	display: block;
-	/*background-image: url('http://placehold.it/940x580');*/
 }
 
 nav {
@@ -35,10 +34,14 @@ nav {
 	min-height: 500px;
 	margin: 80px 0 0 0;
 	/*padding: 0;*/
-	background-color: #49C6E5;
+	/*background-color: #49C6E5;*/
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	background-image: url('../images/IndexImage_v2.jpg');
+	background-size: cover;
+	background-position:0 -80px;
+	overflow: hidden;
 }
 #head_content_div {
 	width: 100%;

@@ -5,6 +5,7 @@ var main = document.getElementById("main");
 var nav_tag = document.getElementById("nav_tag");
 var ul = document.getElementById("navigation");
 var logo = document.createElement("a");
+logo.setAttribute("id", "logo");
 logo.innerHTML = "<a href='index.html'><img src='http://placehold.it/20x20'></a>";
 logo.style.position="fixed";
 logo.style.top="20px";
@@ -47,16 +48,22 @@ switch( title ){
 		break;
 }
 
-var mql = window.matchMedia("screen and (min-width:48em)");
+var mql = window.matchMedia("screen and (max-width:48em)");
 
 var CONST_NAV_HEIGHT = nav_tag.offsetHeight;
 var CONST_HEAD_HEIGHT = head_content.offsetHeight;
 
-var rectObjectValue = (function(height, navHeight){
+// var rectObjectValue = (function(height, navHeight){
+// 	return {
+// 		val : height+navHeight
+// 	};
+// })(CONST_HEAD_HEIGHT, CONST_NAV_HEIGHT);
+
+var rectObjectValue = function(height, navHeight){
 	return {
-		val : height+navHeight
-	};
-})(CONST_HEAD_HEIGHT, CONST_NAV_HEIGHT);
+		val: height+navHeight
+	}
+}
 
 console.log(head_content.parentNode.nodeName);
 
@@ -66,25 +73,20 @@ console.log(head_content.parentNode.nodeName);
  *
  */
 var append = function(mql){
-	if(!mql.matches){
-		// heading.style.height = CONST_NAV_HEIGHT+'px';
-		// title != "Contact Us" ? main.insertBefore(par,main.firstChild) : console.log("");
-		// main.insertBefore(par,main.firstChild);
+	if(mql.matches){ 
+
+		// THIS IS MOBILE SIZE
 		head_content.appendChild(par);
 		nav_tag.insertBefore(logo, nav_tag.firstChild);
-		// heading.contains(head_content) ? (heading.removeChild(head_content), console.log("remove")) : console.log("no heading");
+		
 		head_content.contains(head_content_div) ? head_content.removeChild(head_content_div) : console.log("no heading");
 	} else {
-		// title =="Contact Us" ? head_content.style.height = '0': head_content.style.height = CONST_HEAD_HEIGHT+'px';
-		// if(nav_tag.contains(logo) || main.contains(par)){
-		if(nav_tag.contains(logo) || head_content.contains(par)){	
-			nav_tag.removeChild(nav_tag.firstChild);
-			// main.contains(par) ? main.removeChild(par) : console.log("no par MQL ORIGINAL MATCH");
-			head_content.contains(par) ? head_content.removeChild(par) : console.log("no par MQL ORIGINAL MATCH");
+
+		// DESKTOP
+		if(head_content.contains(par)){	
+			head_content.removeChild(par);
+			head_content.appendChild(head_content_div);
 		}
-		head_content.appendChild(head_content_div)
-		// heading.appendChild(head_content);
-		console.log("DOES THIS HAPPEN")
 	}
 }
 
@@ -121,8 +123,11 @@ window.onload = function(){
 	var flexMQL = window.matchMedia("screen and (min-width:60em)");
 	reverseFlexClass(flex_items_reverse, flexMQL);
 	var rectObject = heading.getBoundingClientRect();
-	
-	if(Math.round(rectObject.bottom) == rectObjectValue.val || rectObject.bottom == CONST_NAV_HEIGHT){
+
+	CONST_HEAD_HEIGHT = head_content.offsetHeight;
+	var val = rectObjectValue(CONST_HEAD_HEIGHT,CONST_NAV_HEIGHT).val
+	console.log(rectObject.bottom + "  " + val + "ADDING SHADOW NOW");
+	if(Math.round(rectObject.bottom) == val || rectObject.bottom == CONST_NAV_HEIGHT){
 		nav_tag.style["box-shadow"]="none";
 	} else {
 		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
@@ -140,11 +145,20 @@ window.onresize = function(){
 	var flexMQL = window.matchMedia("screen and (min-width:60em)");
 	reverseFlexClass(flex_items_reverse, flexMQL);
 
+	var appendedLogo = document.getElementById("logo");
+	if((!(ul.style.float == "right") || ul.style.float=="none") && !mql.matches){
+		if(nav_tag.contains(appendedLogo)){
+			nav_tag.removeChild(appendedLogo);
+		}
+	}
+
 }
 
 window.onscroll = function(){
 	var rectObject = heading.getBoundingClientRect();
-	// console.log(rectObject.bottom + "  " + rectObjectValue.val + "ADDING SHADOW NOW");
+	CONST_HEAD_HEIGHT = head_content.offsetHeight;
+	var val = rectObjectValue(CONST_HEAD_HEIGHT,CONST_NAV_HEIGHT).val
+	console.log(rectObject.bottom + "  " + val + "ADDING SHADOW NOW");
 
 	/*
 	*
@@ -152,30 +166,35 @@ window.onscroll = function(){
 	* 	value → amount of box already hidden as calculated by getBoundingClientRect()
 	*	
 	*/
-	if(Math.round(rectObject.bottom) == CONST_NAV_HEIGHT && !mql.matches) {
-		// Mobile Style
+	if(Math.round(rectObject.bottom) == CONST_NAV_HEIGHT) {
+		
+		// TOP OF PAGE
 		nav_tag.style["box-shadow"]= "none";
 		ul.style.float="none";
-		console.log("ON SCROLL, MOBILE");
-	} else if( Math.round(rectObject.bottom) < rectObjectValue.val){
-		title == "Contact Us" && Math.round(rectObject.bottom) == CONST_NAV_HEIGHT ? (nav_tag.style["box-shadow"]="none", ul.style.float="none") : nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
-		// Full Width Style
-		if(!nav_tag.contains(logo)){
-			nav_tag.insertBefore(logo, nav_tag.firstChild);
-			if(mql.matches){
-				ul.style.float="right";
-				console.log("ON SCROLL, AFTER APPEND MQL MATCH");
-			} else {
-				console.log("ON SCROLL, AFTER APPEND MQL NOT MATCH");
-			}
-		}
+
+		// CHECK IF MOBILE
+		mql.matches ? nav_tag.insertBefore(logo, nav_tag.firstChild): nav_tag.removeChild(nav_tag.firstChild);
+
+	} else if( Math.round(rectObject.bottom) < val){
+		
+		// AFTER SCROLL
+		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)"
+
+		// CHECK IF DESKTOP
+		!mql.matches ? (
+				ul.style.float="right",
+				nav_tag.insertBefore(logo, nav_tag.firstChild)
+			) : (
+				console.log("null")
+			);
+
 	} else {
-		// Full Width Style at Beginning
-		console.log("ON SCROLL, FULL WIDTH STYLE Beginning");
+		
+		// BACK ON TOP
 		nav_tag.style["box-shadow"]= "none";
-		if(nav_tag.contains(logo)){
-			nav_tag.removeChild(nav_tag.firstChild);
-			ul.style.float="none";
-		}
+		
+		// CHECK IF MOBILE
+		mql.matches ? (nav_tag.insertBefore(logo, nav_tag.firstChild)): (nav_tag.removeChild(nav_tag.firstChild), ul.style.float="none", console.log("remove"));		
+		
 	}
 }	

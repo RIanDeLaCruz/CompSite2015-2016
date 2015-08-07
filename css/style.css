@@ -7,6 +7,12 @@
  *
  */
 
+ /* https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations/Detecting_CSS_animation_support */
+/*
+ * Please check browser compatibility. If not supported, use float solution
+ *
+ *
+ */
 @import url("type.css");
 
 body, h1, p {
@@ -27,7 +33,7 @@ header {
 nav {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	height: 80px;
 	padding-right: 2em;
 	background-color: #49C6E5;
@@ -84,6 +90,76 @@ textarea {
 	display: block;
 	height: 1em;
 	width: 100%;
+}
+
+.nav-animated {
+	position: absolute;
+	left:49%;
+	margin: 2em 0;
+}
+
+.center-head {
+	transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.sliding-right {
+	animation: slideRight 0.5s linear;
+	-webkit-animation: slideRight 0.5s linear;
+	-moz-animation: slideRight 0.5s linear;
+	-o-animation: slideRight 0.5s linear;
+	-ms-animation: slideRight 0.5s linear;
+}
+
+@keyframes slideRight {
+	from {
+		transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);	
+	}
+
+	to {
+		transform: translateX(0);
+	    -webkit-transform: translateX(0);
+	    -moz-transform: translateX(0);
+	    -o-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	}
+}
+
+.sliding-left {
+	animation: slideLeft 0.75s linear;
+	-webkit-animation: slideLeft 0.75s linear;
+	-moz-animation: slideLeft 0.75s linear;
+	-o-animation: slideLeft 0.75s linear;
+	-ms-animation: slideLeft 0.75s linear;
+}
+
+@keyframes slideLeft {
+	from {
+		transform: translateX(0);
+	    -webkit-transform: translateX(0);
+	    -moz-transform: translateX(0);
+	    -o-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	}
+}
+
+.afterSlideMargin {
+	margin-left: -40px;
 }
 
 
@@ -330,11 +406,14 @@ footer {
 }
 
 @media screen and (max-width : 48em){
+	nav {
+		padding: 0;
+	}
 	/*Make dropdown links appear inline*/
 	nav ul {
 		position: static;
 		display: none;
-		width: 100%;
+		width: 100vw;
 		margin-top: 4em;
 	}
 	
@@ -380,5 +459,13 @@ footer {
 
 	.avp_container {
 		display: none;
+	}
+
+	h2.flex-head {
+		width: 90vw;
+	}
+	main.content_div flex-container> img{
+		width: 100vw;
+		padding: 0;
 	}
 }

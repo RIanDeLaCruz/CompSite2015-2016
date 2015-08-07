@@ -14,29 +14,36 @@
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	line-height: 133.33%;
+	color: #37392E;
 }
 
 h1 {
 	font-family: "Futura Condensed", Arial, sans-serif;
 	text-transform: uppercase;
+	color: #111;
 }
 
 h2, h3, h4, h5, h6 {
 	font-family: "Futura Bold", Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	color: #111;
+}
+
+strong {
+	color: #222;
 }
 
 nav a, nav a:visited {
 	color: white;
 }
 
-a, a:active {
+a, a:visited, a:active {
 	color: #F3F3F3;
 	text-decoration: none;
 	transition: color 200ms ease;
 }
 
-a:hover, a:visited {
+a:hover, a:focus {
 	color: #19647E;
 }

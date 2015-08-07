@@ -43,6 +43,7 @@ footer {
 
 	.social-media h3 {
 		margin: 15px 0;
+		color: white;
 	}
 
 	.social-media img {
@@ -157,11 +158,11 @@ textarea {
 
 @keyframes slideRight {
 	from {
-		transform: translateX(-50%);
-	    -webkit-transform: translateX(-50%);
-	    -moz-transform: translateX(-50%);
-	    -o-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
+		transform: translateX(-40%);
+	    -webkit-transform: translateX(-40%);
+	    -moz-transform: translateX(-40%);
+	    -o-transform: translateX(-40%);
+	    -ms-transform: translateX(-40%);
 	}
 
 	to {
@@ -174,20 +175,20 @@ textarea {
 }
 
 .sliding-left {
-	animation: slideLeft 0.75s linear;
-	-webkit-animation: slideLeft 0.75s linear;
-	-moz-animation: slideLeft 0.75s linear;
-	-o-animation: slideLeft 0.75s linear;
-	-ms-animation: slideLeft 0.75s linear;
+	animation: slideLeft 0.5s linear;
+	-webkit-animation: slideLeft 0.5s linear;
+	-moz-animation: slideLeft 0.5s linear;
+	-o-animation: slideLeft 0.5s linear;
+	-ms-animation: slideLeft 0.5s linear;
 }
 
 @keyframes slideLeft {
 	from {
-		transform: translateX(0);
-	    -webkit-transform: translateX(0);
-	    -moz-transform: translateX(0);
-	    -o-transform: translateX(0);
-	    -ms-transform: translateX(0);
+		transform: translateX(-40px);
+	    -webkit-transform: translateX(-40px);
+	    -moz-transform: translateX(-40px);
+	    -o-transform: translateX(-40px);
+	    -ms-transform: translateX(-40px);
 	}
 
 	to {
@@ -285,7 +286,7 @@ textarea {
 }
 
 .circle_icon {
-	border: 1px  solid #000;
+	border: 1px solid #37392E;
 	border-radius: 50%;
 	width: 6em;
 	height: 6em;
@@ -319,7 +320,7 @@ textarea {
  .welcome-text {
  	width: 400px;
  	height: 300px;
- 	margin-top: 4em;
+ 	margin-top: 3em;
  	display: flex;
  	flex-flow: row wrap;
  	justify-content: center;
@@ -524,9 +525,13 @@ textarea {
  		text-align: right;
  	}
 
- 	#mission > img,
- 	#vision > img {
- 		width: 210px;
+ 	#mission img,
+ 	#vision img {
+ 		height: 40px;
+ 	}
+
+ 	#mission img {
+ 		float: right;
  	}
 
  	#vision .intro_text,
@@ -535,8 +540,14 @@ textarea {
  		width: 400px;
  	}
 
+ 	#vision .intro_text p,
+ 	#mission .intro_text p {
+ 		padding-top: 10px;
+ 	}
+
  	#mission .intro_text p {
  		text-align: right;
+ 		clear: both;
  	}
 
  	#core_competencies .flex-container {

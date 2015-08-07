@@ -31,12 +31,12 @@ nav a, nav a:visited {
 	color: white;
 }
 
-a {
+a, a:active {
 	color: #F3F3F3;
 	text-decoration: none;
 	transition: color 200ms ease;
 }
 
-a:hover, a:active {
+a:hover, a:visited {
 	color: #19647E;
 }

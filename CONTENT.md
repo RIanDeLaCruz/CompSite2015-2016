@@ -75,8 +75,8 @@ The organization aims to promote awareness and appreciation of IT and its most r
 	- *E-mail*: viktor@compsat.org
 
 **VP for Finance and Marketing** : Ma. Reyana L. Leonardo
-	- *Contact Number*: 
-	- *E-mail*: reyana@compsat.org
+	- *Contact Number*:
+    - *E-mail*: reyana@compsat.org
 **AVP for Finance** : Vermille Ann T. Saw
 	- *Contact Number*: 0917-306-2945
 	- *E-mail*: vann@compsat.org

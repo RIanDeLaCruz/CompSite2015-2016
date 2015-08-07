@@ -438,9 +438,27 @@ textarea {
  	align-self: center;
  }
 
- .project_item > * {
- 	padding: 0 2em;
- }
+  .project_item {
+  	margin: 2.5% 0;
+  	align-items: center;
+  }
+
+  .project_item > * {
+  	padding: 0 2em;
+  }
+
+ 	.project_item img {
+ 		width: 40%;
+ 	}
+
+ 	#edrive {
+ 		height: 25%;
+ 		width: auto;
+ 	}
+
+ 	.project_item .order_one {
+ 		text-align: right;
+ 	}
 
  .flex-justify-center {
  	justify-content: center;
@@ -461,7 +479,7 @@ textarea {
  		flex-direction: row-reverse;
  	}
 
- 	#mission > h2 {
+ 	#mission h2 {
  		text-align: right;
  	}
 
@@ -686,7 +704,7 @@ input[type=checkbox]:checked ~ #navigation{
 		border-radius:5px;
 	}
 
-	#vision, #mission {
+	#vision h2, #mission h2 {
 		text-align: center;
 	}
 

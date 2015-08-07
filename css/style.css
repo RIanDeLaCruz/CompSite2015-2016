@@ -394,7 +394,7 @@ textarea {
  * ---------------
  *
  */
- #services {
+ #services, #other-systems .flex-container {
  	align-items: flex-start;
  }
 
@@ -439,6 +439,29 @@ textarea {
 
 #add-ons .service .feature {
 	margin-left: 30px;
+}
+
+#other-systems {
+	background-color: #37392E;
+}
+
+#other-systems .flex-container {
+	flex-flow: row-reverse;
+}
+
+#other-systems .flex-head,
+#other-systems .service {
+	color: #F3F3F3;
+}
+
+#other-systems .details {
+	text-align: right;
+	margin-right: 2em;
+	margin-left: 0;
+}
+
+#other-systems h2 {
+	color: #2EC4B6;
 }
 
 #showcase {

@@ -1,7 +1,42 @@
+@font-face {
+	font-family: "Futura Condensed";
+	src: url('../fonts/FuturaLT-Condensed.ttf') format('truetype');
+}
+	
+@font-face {
+	font-family: "Futura Bold";
+	src: url('../fonts/FuturaLT-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
-	font-family: Helvetica LT Std, Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
+	line-height: 133.33%;
+}
+
+h1 {
+	font-family: "Futura Condensed", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: "Futura Bold", Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 nav a, nav a:visited {
 	color: white;
+}
+
+a {
+	color: #F3F3F3;
+	text-decoration: none;
+	transition: color 200ms ease;
+}
+
+a:hover, a:active {
+	color: #2EC4B6;
 }

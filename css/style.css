@@ -398,7 +398,8 @@ textarea {
  	align-items: flex-start;
  }
 
- .details {
+ #services .details,
+ #other-systems .details {
  	width: 35%;
  	margin-left: 2em;
  }
@@ -701,28 +702,28 @@ textarea {
 	padding-left: 20px;
 }
 
-/*
- * Per Department Styling
- */
-/*#top2 {
-	justify-content: space-around;
-	margin: 0 10%;
-}
-
-.departments {
-	align-items: flex-start;
-}
-
-#dnp, #ea, #fnm, #ia, #lnp, #rnd, #moderator {
-	flex-flow: column wrap;
-	width: 33.33%;
-	width: calc(100%/3);
-}
-*/
 #moderator {
 	flex-direction: column;
 	align-items: center;
 }
+
+/*
+ * ---------------
+ * Contact Us Page
+ * ---------------
+*/
+#contactus {
+	align-content: flex-start;
+}
+
+#contactus .details {
+	margin: 2em 0;
+}
+
+#contactus .details a:hover {
+	text-decoration: underline;
+}
+
 
 /*
  * ----------------

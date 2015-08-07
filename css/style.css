@@ -394,27 +394,55 @@ textarea {
  * ---------------
  *
  */
-.rates {
-	width: 20em;
-	border: 1px  solid #000;
-	border-radius: 4px;
-	float: left;
-	text-align: center;
-	display: table;
+ #services {
+ 	align-items: flex-start;
+ }
+
+ .details {
+ 	width: 35%;
+ 	margin-left: 2em;
+ }
+
+ .service {
+ 	margin-bottom: 2em;
+ }
+
+ .service h2 {
+ 	margin: 0 0 10px;
+ 	color: #19647E;
+ }
+
+ .service .price {
+ 	color: #EF2D56;
+ 	margin-bottom: 5px;
+ 	font-weight: bold;
+ 	font-size: 1.5em;
+ }
+
+#add-ons {
+	width: 75%;
+	margin: 0 auto;
+	text-align: left;
 }
 
-	.rates p:not(:last-of-type) {
-		display: block;
-		padding: 1em;
-		border-bottom: 1px solid;
-	}
-
-.showcase {
-	display: block;
-	width: 320px;
-	height: 240px;
-	background-color: green;
+#add-ons .service {
+	width: 25%;
+	width: (100%/4);
 	margin: 2em;
+}
+
+#add-ons .service img {
+	width: 30px;
+	float: left;
+	margin-left: -10px;
+}
+
+#add-ons .service .feature {
+	margin-left: 30px;
+}
+
+#showcase {
+	background-color: #F3F3F3;
 }
 
 /*

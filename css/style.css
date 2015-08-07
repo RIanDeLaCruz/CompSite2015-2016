@@ -461,6 +461,10 @@ textarea {
  		flex-direction: row-reverse;
  	}
 
+ 	#mission > h2 {
+ 		text-align: right;
+ 	}
+
  	#mission > img,
  	#vision > img {
  		width: 210px;
@@ -518,6 +522,50 @@ textarea {
 .col-3 {
 	display:inline-block;
 	width:30%;
+	width: (100%/333.33);
+}
+
+#eb-ac {
+	background-color: #F3F3F3;
+}
+
+	#eb-ac .circle_icon {
+		margin: 10px auto;
+		background-position: 0 0;
+		background-size: cover;
+	}
+
+		/* TEMPORARY until EB+AC photoshoot */
+		.eb-info .circle_icon,
+		#moderator .circle_icon {
+			background-image: url('../images/EBAC_Placeholder1.png');
+		}
+
+		.avp_container .circle_icon {
+			background-image: url('../images/EBAC_Placeholder2.png');
+		}
+
+	.position {
+		font-weight: bold;
+	}
+
+	.email a {
+		color: #666;
+		word-wrap: break-word;
+	}
+
+	.email a:hover {
+		color: #333;
+	}
+
+#eb-ac .flex-container {
+	padding: 0px;
+}
+
+.flex-container .eb-info {
+	/*display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;*/
 }
 
 .avp_container {
@@ -528,6 +576,31 @@ textarea {
 .avp_text {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: left;
+	padding-left: 20px;
+}
+
+/*
+ * Per Department Styling
+ */
+/*#top2 {
+	justify-content: space-around;
+	margin: 0 10%;
+}
+
+.departments {
+	align-items: flex-start;
+}
+
+#dnp, #ea, #fnm, #ia, #lnp, #rnd, #moderator {
+	flex-flow: column wrap;
+	width: 33.33%;
+	width: calc(100%/3);
+}
+*/
+#moderator {
+	flex-direction: column;
+	align-items: center;
 }
 
 /*
@@ -613,9 +686,44 @@ input[type=checkbox]:checked ~ #navigation{
 		border-radius:5px;
 	}
 
+	#vision, #mission {
+		text-align: center;
+	}
+
+	#vision .intro_text p,
+	#mission .intro_text p {
+		text-align: center;
+		width: 80%;
+		font-size: 1em;
+		margin: 0 auto;
+	}
+
 	.avp_container {
 		display: none;
 	}
+
+	footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+		.social-media,
+		.more-info {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.more-info {
+			position: initial;
+			right: 0;
+			top: 0;
+			padding: 0;
+		}
+
+		.more-info p {
+			margin: 2.5px 0;
+		}
 
 	h2.flex-head {
 		width: 90vw;

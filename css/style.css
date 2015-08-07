@@ -1,9 +1,9 @@
 /*
- * BLUE: #49C6E5;
- * ORANGE: #F75B2C;
- * D.GRAY: #D4D4D4;
- * L.GRAY: #F2F2F2;
- * BLACK: #050505;
+ * D.GRAY:	#37392E;
+ * L.BLUE:	#2EC4B6;
+ * 	WHITE:	#F3F3F3;
+ * 	 PINK:	#EF2D56;
+ * D.BLUE:	#19647E;
  *
  */
 
@@ -15,19 +15,59 @@
  */
 @import url("type.css");
 
-body, h1, p {
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+h1, p {
 	margin: 0;
 }
 
 footer {
-	background-color: #F75B2C;
+	position: relative;
+	background-color: #37392E;
+	color: #F3F3F3;
+	padding: 10px;
+	width: 100%;
 }
+
+	.social-media {
+		display: inline-block;
+		width: 300px;
+		margin-left: 10%;
+		padding: 10px;
+	}
+
+	.social-media h3 {
+		margin: 15px 0;
+	}
+
+	.social-media img {
+		width: 45px;
+		margin-right: 10px;
+	}
+
+	.more-info {
+		position: absolute;
+		right: 10%;
+		display: inline-block;
+		text-align: right;
+		padding: 10px;
+		top: 25px;
+	}
+
+	.more-info p {
+		margin: 5px 0;
+	}
 
 header {
 	display: block;
 }
 	.head_margin {
-		margin-right: 2em;	
+		margin-right: 2em;
 	}
 
 nav {
@@ -36,14 +76,14 @@ nav {
 	width: 100vw;
 	height: 80px;
 	padding-right: 2em;
-	background-color: #49C6E5;
+	background-color: #2EC4B6;
 }
 
 	#head_content {
 		min-height: 600px;
 		margin: 80px 0 0 0;
 		/*padding: 0;*/
-		background-color: #49C6E5;
+		background-color: #2EC4B6;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
@@ -120,7 +160,7 @@ textarea {
 	    -webkit-transform: translateX(-50%);
 	    -moz-transform: translateX(-50%);
 	    -o-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);	
+	    -ms-transform: translateX(-50%);
 	}
 
 	to {
@@ -190,7 +230,7 @@ textarea {
 	text-align: left;
 	align-self: center;
 }
- 
+
 .flex-container {
 	padding: 2.5em 1.5em;
 	max-width: 80em;
@@ -205,7 +245,7 @@ textarea {
 	justify-content: space-around;
 	align-items: center;
 	padding: 0 1em;
-	width:20em; 
+	width:20em;
 }
 
 .content-column {
@@ -269,24 +309,87 @@ textarea {
 	vertical-align: middle;
 }
 
-/* 
+/*
  * ---------------
  * Index Page
- * --------------- 
+ * ---------------
  *
  */
+ .welcome-text {
+ 	width: 400px;
+ 	height: 300px;
+ 	margin-top: 4em;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	justify-content: center;
+ 	align-items: flex-start;
+ }
 
-#what_we_offer, #sponsors_div {
+ 	.welcome-text > h2 {
+ 		margin: 0;
+ 	}
+
+ 	.welcome-text > img {
+ 		width: 425px;
+ 	}
+
+ 	.welcome-text > p {
+ 		margin: 5px 25px;
+ 		text-align: justify;
+ 		line-height: 1.25;
+ 	}
+
+
+#what_we_offer .item {
+	margin: 0 60px;
+	width: 250px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+	#what_we_offer .item > img {
+		width: 100%;
+	}
+
+	#what_we_offer .item > p {
+		margin: 20px 0;
+		width: 200px;
+		flex: 1;
+	}
+
+	#what_we_offer .item > a {
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 1.5;
+		white-space: nowrap;
+		color: #F3F3F3;
+		background-color: #2EC4B6;
+		border-radius: 10px;
+		padding: 8px 16px;
+		margin: 10px 0;
+		vertical-align: middle;
+		transition: background-color 200ms ease;
+	}
+
+	#what_we_offer .item > a:hover {
+		background-color: #30A2BF;
+	}
+
+#sponsors_div {
 	padding: 4em 1em;
 }
 
-#sponsors_div {	background-color: #F2F2F2; }
+#sponsors_div {	background-color: #F3F3F3; }
 
 
-/* 
+/*
  * ---------------
  * Services Page
- * --------------- 
+ * ---------------
  *
  */
 .rates {
@@ -295,7 +398,7 @@ textarea {
 	border-radius: 4px;
 	float: left;
 	text-align: center;
-	display: table; 
+	display: table;
 }
 
 	.rates p:not(:last-of-type) {
@@ -344,24 +447,24 @@ textarea {
  }
 
 
-/* 
+/*
  * ----------------
  * About Us Page
- * --------------- 
+ * ---------------
  */
 
 .col-2 {
-	display:inline-block; 
+	display:inline-block;
 	width:48%;
 }
 
 .col-3 {
-	display:inline-block; 
+	display:inline-block;
 	width:30%;
 }
 
 .avp_container {
-	height:6em; 
+	height:6em;
 	display: table;
 }
 
@@ -370,18 +473,18 @@ textarea {
 	vertical-align: middle;
 }
 
-/* 
+/*
  * ----------------
  * Menu Toggle Style
- * --------------- 
+ * ---------------
  */
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
-	color: #F2F2F2;
-	background: #49C6E5;
-	border: 1px  solid #F2F2F2;
+	color: #F3F3F3;
+	background: #2EC4B6;
+	border: 1px  solid #F3F3F3;
 	border-radius: 2px;
 	text-align: center;
 	padding: 0.5em 1em;
@@ -401,10 +504,6 @@ input[type=checkbox]:checked ~ #navigation{
 	justify-content: space-around;
 }
 
-footer {
-	height: 200px;
-}
-
 @media screen and (max-width : 48em){
 	nav {
 		padding: 0;
@@ -416,14 +515,14 @@ footer {
 		width: 100vw;
 		margin-top: 4em;
 	}
-	
+
 		li {
 			display: block;
 			width: 100%;
-			background-color: #49C6E5;
+			background-color: #2EC4B6;
 			padding: 1em 1em 1em 0;
 		}
-		
+
 		/*Make all menu links full width*/
 			li a {
 				text-align: center;
@@ -434,7 +533,7 @@ footer {
 			}
 
 			li:hover {
-				background-color: #F75B2C;
+				background-color: #19647E;
 			}
 
 			li:last-child {
@@ -454,7 +553,7 @@ footer {
 
 	.rates {
 		width: 100%;
-		border-radius:5px;	
+		border-radius:5px;
 	}
 
 	.avp_container {

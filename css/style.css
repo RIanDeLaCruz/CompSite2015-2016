@@ -82,7 +82,7 @@ nav {
 }
 
 	#head_content {
-		min-height: 600px;
+		min-height: 80vh;
 		margin: 80px 0 0 0;
 		/*padding: 0;*/
 		background-color: #2EC4B6;
@@ -427,7 +427,7 @@ div#head_content.home {
  }
 
  .service .price {
- 	color: #EF2D56;
+ 	color: #F3F3F3;
  	margin: 2.5px 0;
  	font-weight: bold;
  }
@@ -442,6 +442,10 @@ div#head_content.home {
 	width: 25%;
 	width: (100%/4);
 	margin: 1em;
+}
+
+#add-ons .service .price {
+	color: #EF2D56;
 }
 
 #add-ons .service img {
@@ -689,16 +693,11 @@ div#head_content.home {
 
 	.email a:hover {
 		color: #333;
+		text-decoration: underline;
 	}
 
 #eb-ac .flex-container {
 	padding: 0px;
-}
-
-.flex-container .eb-info {
-	/*display: flex;
-	flex-direction: column;
-	flex: 1 1 auto;*/
 }
 
 .avp_container {
@@ -732,7 +731,8 @@ div#head_content.home {
 	margin: 2em 0;
 }
 
-#contactus .details a:hover {
+#contactus .details a:hover,
+#contactus .details a:focus, {
 	text-decoration: underline;
 }
 
@@ -796,7 +796,8 @@ input[type=checkbox]:checked ~ #navigation{
 				height: inherit;
 			}
 
-			li:hover {
+			li:hover,
+			li:focus {
 				background-color: #19647E;
 			}
 
@@ -885,6 +886,17 @@ input[type=checkbox]:checked ~ #navigation{
 
   .project_item {
   	width: 100wh;
+  }
+
+  #eb-ac h2 {
+  	line-height: 125%;
+  }
+
+  .col-2,
+  .col-3 {
+  	width: 44.44%;
+  	width: calc(100%/2.25);
+  	margin: 0 10px;
   }
 
 	.avp_container {

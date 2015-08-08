@@ -344,7 +344,7 @@ div#head_content.home {
  	}
 
  	.welcome-text > p {
- 		margin: 5px 25px;
+ 		margin: 5px 10%;
  		text-align: justify;
  		line-height: 1.25;
  	}
@@ -771,6 +771,24 @@ input[type=checkbox]:checked ~ #navigation{
 	div#head_content.home {
 		background-position: center 80px;
 	}
+
+	.welcome-text {
+		width: 40%;
+		height: 55%;
+	}
+
+ 	.welcome-text > h2 {
+ 		font-size: 1.1em;
+ 	}
+
+ 	.welcome-text > img {
+ 		margin: 0 auto;
+ 	}
+
+ 	.welcome-text p {
+ 		font-size: 0.9em;
+ 		margin: 0.1% 10%;
+ 	}
 }
 
 @media screen and (max-width : 48em){

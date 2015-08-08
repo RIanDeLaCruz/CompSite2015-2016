@@ -86,9 +86,15 @@ nav {
 		margin: 80px 0 0 0;
 		/*padding: 0;*/
 		background-color: #2EC4B6;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
+		-webkit-flex-flow: row wrap;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 		#head_content_div {
@@ -102,9 +108,15 @@ nav {
 		}
 
 	nav ul {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
+		-webkit-flex-flow: row wrap;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
 		list-style-type: none;
 		margin: 2em auto;
 		padding: 0;
@@ -156,6 +168,24 @@ textarea {
 	-ms-animation: slideRight 0.5s linear;
 }
 
+@-webkit-keyframes slideRight {
+	from {
+		transform: translateX(-40%);
+	    -webkit-transform: translateX(-40%);
+	    -moz-transform: translateX(-40%);
+	    -o-transform: translateX(-40%);
+	    -ms-transform: translateX(-40%);
+	}
+
+	to {
+		transform: translateX(0);
+	    -webkit-transform: translateX(0);
+	    -moz-transform: translateX(0);
+	    -o-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	}
+}
+
 @keyframes slideRight {
 	from {
 		transform: translateX(-40%);
@@ -180,6 +210,24 @@ textarea {
 	-moz-animation: slideLeft 0.5s linear;
 	-o-animation: slideLeft 0.5s linear;
 	-ms-animation: slideLeft 0.5s linear;
+}
+
+@-webkit-keyframes slideLeft {
+	from {
+		transform: translateX(-40px);
+	    -webkit-transform: translateX(-40px);
+	    -moz-transform: translateX(-40px);
+	    -o-transform: translateX(-40px);
+	    -ms-transform: translateX(-40px);
+	}
+
+	to {
+		transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	}
 }
 
 @keyframes slideLeft {
@@ -213,11 +261,15 @@ textarea {
  */
 
   .order_one {
- 	order:1;
+ 	-webkit-order:1;
+ 	    -ms-flex-order:1;
+ 	        order:1;
  }
 
  .order_two {
- 	order:2;
+ 	-webkit-order:2;
+ 	    -ms-flex-order:2;
+ 	        order:2;
  }
 
  /*
@@ -230,22 +282,38 @@ textarea {
 .content {
 	width: 30em;
 	text-align: left;
-	align-self: center;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
 }
 
 .flex-container {
 	padding: 2.5em 1.5em;
 	max-width: 80em;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .flex-container-column {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-around;
-	align-items: center;
+	-webkit-flex-flow: column wrap;
+	    -ms-flex-flow: column wrap;
+	        flex-flow: column wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0 1em;
 	width:20em;
 }
@@ -276,7 +344,9 @@ textarea {
 	float: left;
 	text-align: center;
 	display: table;
-	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
 }
 
 .circle p {
@@ -303,7 +373,9 @@ textarea {
 	float: left;
 	text-align: center;
 	display: table;
-	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
 }
 
 .rectangle p {
@@ -329,10 +401,18 @@ div#head_content.home {
  	width: 25em;
  	height: 300px;
  	margin-top: 2%;
+ 	display: -webkit-flex;
+ 	display: -ms-flexbox;
  	display: flex;
- 	flex-flow: row wrap;
- 	justify-content: center;
- 	align-items: flex-start;
+ 	-webkit-flex-flow: row wrap;
+ 	    -ms-flex-flow: row wrap;
+ 	        flex-flow: row wrap;
+ 	-webkit-justify-content: center;
+ 	    -ms-flex-pack: center;
+ 	        justify-content: center;
+ 	-webkit-align-items: flex-start;
+ 	    -ms-flex-align: start;
+ 	        align-items: flex-start;
  }
 
  	.welcome-text > h2 {
@@ -353,10 +433,18 @@ div#head_content.home {
 #what_we_offer .item {
 	margin: 0 60px;
 	width: 250px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	justify-content: flex-start;
+	-webkit-flex-flow: column wrap;
+	    -ms-flex-flow: column wrap;
+	        flex-flow: column wrap;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 	#what_we_offer .item > img {
@@ -366,7 +454,9 @@ div#head_content.home {
 	#what_we_offer .item > p {
 		margin: 20px 0;
 		width: 200px;
-		flex: 1;
+		-webkit-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
 	}
 
 	#what_we_offer .item > a {
@@ -403,7 +493,9 @@ div#head_content.home {
  *
  */
  #services, #other-systems .flex-container {
- 	align-items: flex-start;
+ 	-webkit-align-items: flex-start;
+ 	    -ms-flex-align: start;
+ 	        align-items: flex-start;
  }
 
  #services .details,
@@ -466,7 +558,9 @@ div#head_content.home {
 }
 
 #other-systems .flex-container {
-	flex-flow: row-reverse;
+	-webkit-flex-flow: row-reverse;
+	    -ms-flex-flow: row-reverse;
+	        flex-flow: row-reverse;
 }
 
 #other-systems .flex-head,
@@ -502,18 +596,24 @@ div#head_content.home {
 	border-radius: 50%;
 	text-align: center;
 	display: table;
-	align-self: center;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
  }
 
  .intro_text {
  	width: 30em;
  	margin: 8em 0 8em 0;
- 	align-self: center;
+ 	-webkit-align-self: center;
+ 	    -ms-flex-item-align: center;
+ 	        align-self: center;
  }
 
   .project_item {
   	margin: 2.5% 0;
-  	align-items: center;
+  	-webkit-align-items: center;
+  	    -ms-flex-align: center;
+  	        align-items: center;
   }
 
   .project_item > * {
@@ -538,7 +638,9 @@ div#head_content.home {
  	}
 
  .flex-justify-center {
- 	justify-content: center;
+ 	-webkit-justify-content: center;
+ 	    -ms-flex-pack: center;
+ 	        justify-content: center;
  }
 
 /*
@@ -588,12 +690,16 @@ div#head_content.home {
  * ---------------
  */
  #mission, #vision {
- 	align-items: center;
+ 	-webkit-align-items: center;
+ 	    -ms-flex-align: center;
+ 	        align-items: center;
  	margin: 20px 0;
  }
 
  	#mission {
- 		flex-direction: row-reverse;
+ 		-webkit-flex-direction: row-reverse;
+ 		    -ms-flex-direction: row-reverse;
+ 		        flex-direction: row-reverse;
  	}
 
  	#mission h2 {
@@ -617,13 +723,17 @@ div#head_content.home {
  	}
 
  	#core_competencies .flex-container {
- 		justify-content: space-around;
+ 		-webkit-justify-content: space-around;
+ 		    -ms-flex-pack: distribute;
+ 		        justify-content: space-around;
  		margin: 0 10%;
  		padding: 1em 0;
  	}
 
  		.org-goals {
- 			align-items: center;
+ 			-webkit-align-items: center;
+ 			    -ms-flex-align: center;
+ 			        align-items: center;
  			width: 300px;
  		}
 
@@ -714,8 +824,12 @@ div#head_content.home {
 
 #moderator {
 	margin: 0 auto;
-	flex-direction: column;
-	align-items: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 /*
@@ -724,7 +838,9 @@ div#head_content.home {
  * ---------------
 */
 #contactus {
-	align-content: flex-start;
+	-webkit-align-content: flex-start;
+	    -ms-flex-line-pack: start;
+	        align-content: flex-start;
 }
 
 #contactus .details {
@@ -763,9 +879,15 @@ input[type=checkbox]{
 
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #navigation{
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 @media screen and (max-width: 60em) {
 	div#head_content.home {
@@ -874,7 +996,9 @@ input[type=checkbox]:checked ~ #navigation{
 	}
 
 	#other-systems .flex-container {
-		flex-direction: column;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	#services img,

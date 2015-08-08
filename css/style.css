@@ -320,15 +320,15 @@ textarea {
 div#head_content.home {
 	  background-image: url('../images/index-img.png');
 	  background-size: cover;
-	  background-position:0 0;
+	  background-position: center top;
 	  background-repeat: no-repeat;
 	  overflow: hidden;
 }
 
  .welcome-text {
- 	width: 400px;
+ 	width: 25em;
  	height: 300px;
- 	margin-top: 3em;
+ 	margin-top: 2%;
  	display: flex;
  	flex-flow: row wrap;
  	justify-content: center;
@@ -340,7 +340,7 @@ div#head_content.home {
  	}
 
  	.welcome-text > img {
- 		width: 425px;
+ 		width: 90%;
  	}
 
  	.welcome-text > p {
@@ -767,6 +767,11 @@ input[type=checkbox]:checked ~ #navigation{
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+@media screen and (max-width: 60em) {
+	div#head_content.home {
+		background-position: center 80px;
+	}
+}
 
 @media screen and (max-width : 48em){
 	nav {
@@ -821,7 +826,7 @@ input[type=checkbox]:checked ~ #navigation{
 	}
 
 	div#head_content.home {
-		background-position: center 80px;
+		background-position: center 7em;
 	}
 
 	.welcome-text {

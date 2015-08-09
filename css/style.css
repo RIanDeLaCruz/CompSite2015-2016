@@ -140,7 +140,7 @@ textarea {
 
 .flex-head {
 	text-align: center;
-	margin: .5em 0;
+	margin: 0 auto .5em;
 	display: block;
 	height: 1em;
 	width: 100%;
@@ -330,7 +330,7 @@ textarea {
 }
 
 .content_div {
-	padding: 2em 0;
+	padding: 2em 0 0;
 }
 
 .circle {
@@ -698,7 +698,7 @@ div#head_content.home {
  	-webkit-align-items: center;
  	    -ms-flex-align: center;
  	        align-items: center;
- 	margin: 20px auto;
+ 	margin: 0 auto 10px;
  }
 
  	#mission {
@@ -719,7 +719,8 @@ div#head_content.home {
  	#vision .intro_text,
  	#mission .intro_text {
  		font-size: 1.15em;
- 		width: 50%;
+ 		width: 40%;
+ 		text-align: center;
  	}
 
  	#vision .intro_text p,

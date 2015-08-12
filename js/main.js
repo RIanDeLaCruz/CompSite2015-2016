@@ -80,20 +80,8 @@ window.onload = function(){
 
 	if(Math.round(rectObject.bottom) == val || rectObject.bottom == CONST_NAV_HEIGHT){
 		nav_tag.style["box-shadow"]="none";
-		// ul.classList.add("center-head");
-		// ul.classList.add("nav-animated");
-
-		if( checkAnimationSupport() ){
-			ul.classList.add("nav-animated");
-			ul.classList.add("center-head");
-		}
 	} else {
 		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)";
-	}
-
-	if(mql.matches){
-		ul.classList.remove("nav-animated");
-		ul.classList.remove("center-head");
 	}
 }
 
@@ -129,32 +117,9 @@ window.onscroll = function(){
 		nav_tag.style["box-shadow"]= "0 3px 8px rgba(0,0,0,.25)"
 
 		// CHECK IF DESKTOP
-		// !mql.matches ? (
-		// 		ul.style.float="right",
-		// 		ul.classList.add("head_margin"),
-		// 		// ul.classList.contains("sliding-right") ? console.log("null") : ul.classList.add("sliding-right"),
-		// 		// ul.classList.remove("sliding-left"),
-		// 		// ul.addEventListener("animationend", function(){
-		// 		// 	console.log("rightEnd");
-		// 		// 	ul.classList.remove("center-head");
-		// 		// }, false),
-		// 		nav_tag.insertBefore(logo, nav_tag.firstChild)
-		// 	) : (
-		// 		console.log("null")
-		// 	);
 		if (!mql.matches){
-			if( checkAnimationSupport() ){
-				console.log("scroll");
-				ul.classList.contains("sliding-right") ? console.log("null") : ul.classList.add("nav-animated"), ul.classList.add("sliding-right"), ul.classList.add("afterSlideMargin");
-				ul.classList.remove("sliding-left");
-				ul.addEventListener("animationend", function(){
-					console.log("rightEnd");
-					ul.classList.remove("center-head");
-				}, false);
-			} else {
 				ul.style.float="right";
 				ul.classList.add("head_margin");
-			}
 			nav_tag.insertBefore(logo, nav_tag.firstChild);
 		}
 
@@ -162,34 +127,10 @@ window.onscroll = function(){
 		
 		// BACK ON TOP
 		nav_tag.style["box-shadow"]= "none";
-		// ul.classList.add('sliding-left');
-		// ul.classList.remove('sliding-right');
-		// ul.addEventListener("animationend", function(){
-		// 	ul.classList.add("center-head");
-		// 	ul.classList.remove("sliding-left");
-		// 	console.log("leftEnd");
-		// }, false);
-		console.log(checkAnimationSupport());
-		if( checkAnimationSupport() ){
-			ul.classList.add("nav-animated");
-			ul.classList.add("sliding-left");
-			ul.classList.remove("sliding-right");
-			ul.classList.remove("afterSlideMargin");
-			ul.addEventListener("animationend", function(){
-				ul.classList.add("center-head");
-				ul.classList.remove("sliding-left");
-				console.log("leftEnd");
-			}, false);
-		}
 		
 		// CHECK IF MOBILE
 		mql.matches ? (
-			nav_tag.insertBefore(logo, nav_tag.firstChild),
-			ul.classList.remove("nav-animated"),
-			ul.classList.remove("sliding-right"),
-			ul.classList.remove("afterSlideMargin"),
-			ul.classList.remove("sliding-left"),
-			ul.classList.remove("center-head")
+			nav_tag.insertBefore(logo, nav_tag.firstChild)
 			): (
 			nav_tag.removeChild(nav_tag.firstChild), 
 			ul.style.float="none", 

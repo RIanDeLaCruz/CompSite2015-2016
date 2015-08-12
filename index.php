@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>CompSAt | Premier IT Organization of the Ateneo</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -15,12 +14,12 @@
 				<label for="show-menu" class="show-menu">Menu</label>
 				<input type="checkbox" id="show-menu" role="button">
 				<ul id="navigation">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="aboutus.html">About Us</a></li>
-					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="services.php">Services</a></li>
+					<li><a href="projects.php">Projects</a></li>
+					<li><a href="portfolio.php">Portfolio</a></li>
+					<li><a href="aboutus.php">About Us</a></li>
+					<li><a href="contactus.php">Contact Us</a></li>
 				</ul>
 			</nav>
 			<div id="head_content" class="home" style="height: 90vh;">
@@ -66,16 +65,18 @@
 		<footer>
 			<div class="social-media">
 				<h3>Connect with Us</h3>
-				<a target="_blank" title="Facebook" href="http://facebook.com/CompSAt"><img src="images/ContactUs_fb.png"></a>
-				<a target="_blank" title="Twitter" href="http://twitter.com/CompSAt"><img src="images/ContactUs_twitter.png"></a>
-				<a target="_blank" title="Instagram" href="http://instagram.com/compsatgear"><img src="images/ContactUs_ig.png"></a>
-				<a target="_blank" title="Ask.fm" href="http://ask.fm/CompSAtGear"><img src="images/ContactUs_askfm.png"></a>
+				<a target="_blank" title="Facebook" href="http://facebook.com/CompSAt"><img src="images/contact-fb.png"></a>
+				<a target="_blank" title="Twitter" href="http://twitter.com/CompSAt"><img src="images/contact-twitter.png"></a>
+				<a target="_blank" title="Instagram" href="http://instagram.com/compsatgear"><img src="images/contact-ig.png"></a>
+				<a target="_blank" title="Ask.fm" href="http://ask.fm/CompSAtGear"><img src="images/contact-askfm.png"></a>
 			</div>
 			<div class="more-info">
 				<p class="copyright">CompSAt &copy; 2015</p>
 				<p><a href="aboutus.html">About CompSAt</a></p>
 				<p><a href="contactus.html">Contact Us</a></p>
 			</div>
+			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+			<script type="text/javascript" src="js/jquery.transit.min.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
 		</footer>
 	</body>

@@ -762,6 +762,10 @@ div#head_content.home {
  			margin: 10px 0;
  		}
 
+.col-2, .col-3 {
+	margin: 10px auto;
+}
+
 .col-2 {
 	display:inline-block;
 	width:40%;
@@ -770,8 +774,8 @@ div#head_content.home {
 
 .col-3 {
 	display:inline-block;
-	width: 30%;
-	width: calc(100%/3.33);
+	width: 33.33%;
+	width: calc(100%/3);
 }
 
 #eb-ac {
@@ -815,6 +819,8 @@ div#head_content.home {
 .avp_container {
 	height:6em;
 	display: table;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .avp_text {

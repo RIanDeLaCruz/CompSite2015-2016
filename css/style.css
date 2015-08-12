@@ -714,7 +714,8 @@ div#head_content.home {
  	#vision .intro_text,
  	#mission .intro_text {
  		font-size: 1.15em;
- 		width: 400px;
+ 		width: 50%;
+ 		text-align: center;
  	}
 
  	#vision .intro_text p,
@@ -792,7 +793,7 @@ div#head_content.home {
 			background-image: url('../images/EBAC_Placeholder2.png');
 		}
 
-	.position {
+	.name {
 		font-weight: bold;
 	}
 
@@ -1035,7 +1036,7 @@ input[type=checkbox]:checked ~ #navigation{
   }
 
   .project_item {
-  	width: 100wh;
+  	width: 100vw;
   }
 
   #eb-ac h2 {

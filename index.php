@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>CompSAt | Premier IT Organization of the Ateneo</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
 	<body>

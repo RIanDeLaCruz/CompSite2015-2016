@@ -1062,12 +1062,18 @@ input[type=checkbox]:checked ~ #navigation{
 		padding: 1em;
 	}
 
-	div#head_content.home {
-		background-position: center 7em;
+	.rgear, .corkboard, .servers {
+		display: none;
+	}
+
+	.desk {
+		width: 100%;
+		background-position: bottom center;
 	}
 
 	.welcome-text {
 		width: 100vw;
+		height: 70%;
 	}
 
  	.welcome-text > h2 {
@@ -1076,7 +1082,12 @@ input[type=checkbox]:checked ~ #navigation{
 
  	.welcome-text > img {
  		width: 90vw;
- 		margin: 0 auto;
+ 		margin: 10px auto;
+ 	}
+
+ 	.welcome-text > p {
+ 		font-size: 1.125em;
+ 		margin-bottom: 10px;
  	}
 
  	#what_we_offer .item {

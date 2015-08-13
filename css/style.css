@@ -27,7 +27,7 @@ h1, p {
 }
 
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	height: 7.8em;
 	background-color: #37392E;
@@ -86,7 +86,7 @@ nav {
 	#head_content {
 		/*min-height: 80vh;*/
 		margin: 80px 0 0 0;
-		padding-bottom: 7.8em;
+		/*padding: 0;*/
 		background-color: #2EC4B6;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -1084,10 +1084,6 @@ input[type=checkbox]:checked ~ #navigation{
 		padding-left: 0;
 		padding-right: 0;
 		height: 200px;
-	}
-
-	#head_content {
-		padding-bottom: 200px;
 	}
 
 		.social-media,

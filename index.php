@@ -20,7 +20,7 @@
 					<li><a href="projects.php">Projects</a></li>
 					<li><a href="portfolio.php">Portfolio</a></li>
 					<li><a href="aboutus.php">About Us</a></li>
-					<li><a href="ContactUs_s.php">Contact Us</a></li>
+					<li><a href="contactus.php">Contact Us</a></li>
 				</ul>
 			</nav>
 			<div id="head_content" class="home" style="height: 90vh;">

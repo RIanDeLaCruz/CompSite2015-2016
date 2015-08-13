@@ -28,9 +28,13 @@
 						<h2 style="font-family:'Lucida Console', Monaco, monospace; letter-spacing: 0; text-transform: initial;">Hello World! Welcome to</h2>
 						<img src="images/CompSAtLogo.png">
 						<br>
-						<p>The Computer Society of the Ateneo, or <strong>CompSAt</strong>, is the premier Information Technology (IT) organization of the Ateneo.</p>
-						<p>CompSAt strives to help members by providing new avenues for <strong>learning IT</strong>, creating systems and rendering services by <strong>using IT</strong>, and helping out the community by <strong>sharing IT</strong>.</p>
+						<p>We strive to help members by providing new avenues to <strong>learn IT</strong>, to create systems and render services to <strong>use IT</strong>, and to help out the community and <strong>share IT</strong>.</p>
+						<a href="#what_we_offer" id="cta">Read More</a>
 					</div>
+				<div class="servers">&nbsp;</div>
+				<div class="corkboard">&nbsp;</div>
+				<div class="desk">&nbsp;</div>
+				<div class="rgear">&nbsp;</div>
 			</div>
 		</header>
 		<main id="main">
@@ -79,6 +83,18 @@
 			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 			<script type="text/javascript" src="js/jquery.transit.min.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript">
+			$(function () {
+				$('#cta').click(function (e) {
+					e.preventDefault();
+					$('html, body').animate({
+						scrollTop: $('#what_we_offer').offset().top - 80
+					}, 600, 'swing', function () {
+						window.location.hash = '';
+					});
+				});
+			});
+			</script>
 		</footer>
 	</body>
 </html>

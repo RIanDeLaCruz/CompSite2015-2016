@@ -282,8 +282,8 @@ textarea {
 .content {
 	width: 30em;
 	text-align: left;
-	-webkit-align-self: center;
-	    -ms-flex-item-align: center;
+	-ms-flex-item-align: center;
+	    -webkit-align-self: center;
 	        align-self: center;
 }
 
@@ -327,6 +327,7 @@ textarea {
 #main {
 	display: block;
 	text-align: center;
+	z-index: 10;
 }
 
 /*#head_content, #main {
@@ -395,47 +396,103 @@ textarea {
  *
  */
 div#head_content.home {
-	  background-image: url('../images/index-img.png');
+	  /*background-image: url('../images/index-img.png');
 	  background-size: cover;
 	  background-position: center top;
 	  background-repeat: no-repeat;
-	  overflow: hidden;
+	  overflow: hidden;*/
+	  position: relative;
 }
 
+ .rgear {
+ 	right: 5%;
+ 	height: 92%;
+ 	width: 25%;
+ 	background: transparent url("../images/IndexImage_rgear.png") no-repeat;
+ 	background-position: 100% 150%;
+ }
+
+ .servers {
+ 	right: 0;
+ 	height: 100%;
+ 	width: 35%;
+ 	background: transparent url("../images/IndexImage_servers.png") no-repeat;
+ 	background-position: 100% 0%;
+ }
+
+ .desk {
+ 	left: 0;
+ 	height: 50%;
+ 	width: 60%;
+ 	background: transparent url("../images/IndexImage_table.png") no-repeat;
+ 	background-position: 100% -50%;
+ }
+
+ .rgear, .servers, .desk, .corkboard {
+ 	display: block;
+ 	position: absolute;
+ 	bottom: 0;
+ 	background-size: 100%;
+ }
+
+ .corkboard {
+ 	top: 5%;
+ 	left: 1.5%;
+ 	bottom: initial;
+ 	height: 41.25%;
+ 	width: 25%;
+ 	background: transparent url("../images/IndexImage_board.png") no-repeat;
+ 	background-position: 100% 100%;
+ }
+
  .welcome-text {
- 	/*width: 40rem;*/
- 	/*height: 30rem;*/
- 	width: 400px;
- 	height: 300px;
+ 	width: 40%;
+ 	height: 43%;
+ 	padding: 2% 0;
  	margin-top: 2%;
- 	display: -webkit-flex;
- 	display: -ms-flexbox;
+ 	z-index: 6;
  	display: flex;
- 	-webkit-flex-flow: row wrap;
- 	    -ms-flex-flow: row wrap;
- 	        flex-flow: row wrap;
- 	-webkit-justify-content: center;
- 	    -ms-flex-pack: center;
- 	        justify-content: center;
- 	-webkit-align-items: flex-start;
- 	    -ms-flex-align: start;
- 	        align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
  }
 
  	.welcome-text > h2 {
- 		margin: 5px;
- 		/*font-size: 2em;*/
+ 		margin: 0 auto;
+ 		font-size: 1.5em;
  	}
 
  	.welcome-text > img {
- 		width: 90%;
+ 		width: 30em;
+ 		margin: 10px auto;
  	}
 
  	.welcome-text > p {
  		margin: 5px 10%;
  		text-align: justify;
- 		/*font-size: 1.45em;*/
+ 		font-size: 1.25em;
  		line-height: 1.25;
+ 	}
+
+ 	.welcome-text > a {
+ 		display: inline-block;
+ 		text-align: center;
+ 		text-decoration: none;
+ 		font-size: 18px;
+ 		line-height: 1.5;
+ 		white-space: nowrap;
+ 		color: #F3F3F3;
+ 		background-color: #EF2D56;
+ 		border-radius: 10px;
+ 		padding: 8px 16px;
+ 		margin: 10px 0;
+ 		vertical-align: middle;
+ 		transition: background-color 200ms ease;
+ 	}
+
+ 	.welcome-text > a:hover {
+ 		background-color: #FF1D25;
  	}
 
 
@@ -605,8 +662,8 @@ div#head_content.home {
 	border-radius: 50%;
 	text-align: center;
 	display: table;
-	-webkit-align-self: center;
-	    -ms-flex-item-align: center;
+	-ms-flex-item-align: center;
+	    -webkit-align-self: center;
 	        align-self: center;
  }
 
@@ -618,8 +675,8 @@ div#head_content.home {
  .intro_text {
  	width: 30em;
  	margin: 8em 0 8em 0;
- 	-webkit-align-self: center;
- 	    -ms-flex-item-align: center;
+ 	-ms-flex-item-align: center;
+ 	    -webkit-align-self: center;
  	        align-self: center;
  }
 
@@ -850,8 +907,8 @@ div#head_content.home {
  * ---------------
 */
 #contactus {
-	-webkit-align-content: flex-start;
-	    -ms-flex-line-pack: start;
+	-ms-flex-line-pack: start;
+	    -webkit-align-content: flex-start;
 	        align-content: flex-start;
 }
 
@@ -874,13 +931,19 @@ div#head_content.home {
 
 /* Sticky Footer */
 body {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 #header, #head_content, #main {
-	flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
 #header {

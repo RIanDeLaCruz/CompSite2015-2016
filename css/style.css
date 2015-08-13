@@ -996,8 +996,12 @@ input[type=checkbox]:checked ~ #navigation{
  		margin-bottom: 1em;
  	}
 
+ 	#head_content .content_div article {
+ 		width: 40em;
+ 	}
+
 	#mission p, #vision p {
-		width: 100wh;
+		width: 90vw;
 		letter-spacing: 0.02em;
 	}
 
@@ -1051,8 +1055,8 @@ input[type=checkbox]:checked ~ #navigation{
 
   .col-2,
   .col-3 {
-  	width: 44.44%;
-  	width: calc(100%/2.25);
+  	width: 33.33%;
+  	width: calc(100%/3);
   	margin: 0 10px;
   }
 

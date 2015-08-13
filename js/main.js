@@ -6,7 +6,7 @@ var nav_tag = document.getElementById("nav_tag");
 var ul = document.getElementById("navigation");
 var logo = document.createElement("a");
 logo.setAttribute("id", "logo");
-logo.innerHTML = "<a href='index.html'><img src='images/newCompSAtGear.png' width='40px' height='40px'></a>";
+logo.innerHTML = "<a href='index.php'><img src='images/newCompSAtGear.png' width='40px' height='40px'></a>";
 logo.style.position="fixed";
 logo.style.top="15px";
 logo.style.left="10vw";

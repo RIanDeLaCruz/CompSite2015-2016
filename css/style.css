@@ -855,6 +855,13 @@ div#head_content.home {
 	text-decoration: underline;
 }
 
+#message {
+	width: 90%;
+}
+
+#form {
+	margin-bottom: 5%;
+}
 
 /*
  * ----------------

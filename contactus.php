@@ -42,8 +42,8 @@
 							<input type="text" id="name" name="name"><br>
 							<label for="email" class="form_email">Email:</label><br>
 							<input type="text" id="email" name="email"><br>
-							<label for="name" class="form_name">Message:</label><br>
-							<textarea id="name" cols="60" rows="10" name="message"></textarea><br>
+							<label for="message" class="form_name">Message:</label><br>
+							<textarea id="message" cols="60" rows="10" name="message"></textarea><br>
 							<?php
 					          require_once('recaptchalib.php');
 					          $publickey = "6LfjbfkSAAAAAGz90iRtST3hVr8gGm5XjYytqj5x"; // you got this from the signup page

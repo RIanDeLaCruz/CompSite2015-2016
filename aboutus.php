@@ -156,7 +156,7 @@
 						<div class="circle_icon"></div>
 						<p class="avp_text">
 							<span class="name">Viktor Mikhael M. Dela Cruz</span><br>
-							<span class="position">AVP for Universtiy Relations</span><br>
+							<span class="position">AVP for University Relations</span><br>
 							<span class="email"><a href="mailto:viktor@compsat.org">viktor@compsat.org</a></span>
 						</p>
 					</div>

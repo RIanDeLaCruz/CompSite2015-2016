@@ -28,7 +28,6 @@ h1, p {
 
 footer {
 	position: relative;
-	bottom: 0;
 	height: 7.8em;
 	background-color: #37392E;
 	color: #F3F3F3;
@@ -84,7 +83,6 @@ nav {
 }
 
 	#head_content {
-		/*min-height: 80vh;*/
 		margin: 80px 0 0 0;
 		/*padding: 0;*/
 		background-color: #2EC4B6;
@@ -330,6 +328,10 @@ textarea {
 	display: block;
 	text-align: center;
 }
+
+/*#head_content, #main {
+	height: calc(100vh - 100px);
+}*/
 
 .content_div {
 	padding: 2em 0 0;
@@ -868,6 +870,21 @@ div#head_content.home {
 
 #form {
 	margin-bottom: 5%;
+}
+
+/* Sticky Footer */
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+#header, #head_content, #main {
+	flex: 1;
+}
+
+#header {
+	background-color: #F3F3F3;
 }
 
 /*

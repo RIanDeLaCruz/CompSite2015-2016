@@ -178,14 +178,14 @@
 							<span class="email"><a href="mailto:vann@compsat.org">vann@compsat.org</a></span>
 						</p>
 					</div>
-					<div class="avp_container">
+					<!-- <div class="avp_container">
 						<div class="circle_icon"></div>
 						<p class="avp_text">
 							<span class="name">Jose Luis P. Bayoneta</span><br>
 							<span class="position">AVP for Corporate Relations</span><br>
 							<span class="email"><a href="mailto:chino@compsat.org">chino@compsat.org</a></span>
 						</p>
-					</div>
+					</div> -->
 				</div>
 
 				<!-- IA/LnP/RnD -->
@@ -269,9 +269,9 @@
 					<div class="avp_container">
 						<div class="circle_icon"></div>
 						<p class="avp_text">
-							<span class="name">Dennis Kian L. Paras</span><br>
+							<span class="name">Jenina Isabel L. Sanchez</span><br>
 							<span class="position">AVP for Training</span><br>
-							<span class="email"><a href="mailto:kian@compsat.org">kian@compsat.org</a></span>
+							<span class="email"><a href="mailto:nina@compsat.org">nina@compsat.org</a></span>
 						</p>
 					</div>
 				</div>

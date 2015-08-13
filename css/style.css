@@ -104,7 +104,7 @@ nav {
 		#head_content .content_div article {
 			margin: 0;
 			padding: 0;
-			width: 40em;
+			/*width: 40em;*/
 		}
 
 	nav ul {
@@ -140,7 +140,7 @@ textarea {
 
 .flex-head {
 	text-align: center;
-	margin: .5em 0;
+	margin: 0 auto .5em;
 	display: block;
 	height: 1em;
 	width: 100%;
@@ -289,7 +289,8 @@ textarea {
 
 .flex-container {
 	padding: 2.5em 1.5em;
-	/*max-width: 80em;*/
+	margin: 0 auto;
+	max-width: 80em;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -329,7 +330,7 @@ textarea {
 }
 
 .content_div {
-	padding: 2em 0;
+	padding: 2em 0 0;
 }
 
 .circle {
@@ -398,8 +399,10 @@ div#head_content.home {
 }
 
  .welcome-text {
- 	width: 30rem;
- 	height: 21.5rem;
+ 	/*width: 40rem;*/
+ 	/*height: 30rem;*/
+ 	width: 400px;
+ 	height: 300px;
  	margin-top: 2%;
  	display: -webkit-flex;
  	display: -ms-flexbox;
@@ -416,7 +419,8 @@ div#head_content.home {
  }
 
  	.welcome-text > h2 {
- 		margin: 0;
+ 		margin: 5px;
+ 		/*font-size: 2em;*/
  	}
 
  	.welcome-text > img {
@@ -426,8 +430,8 @@ div#head_content.home {
  	.welcome-text > p {
  		margin: 5px 10%;
  		text-align: justify;
+ 		/*font-size: 1.45em;*/
  		line-height: 1.25;
- 		font-size: 105%;
  	}
 
 
@@ -481,7 +485,7 @@ div#head_content.home {
 	}
 
 #sponsors_div {
-	padding: 4em 1em;
+	/*padding: 4em 1em;*/
 }
 
 #sponsors_div {	background-color: #F3F3F3; }
@@ -694,7 +698,7 @@ div#head_content.home {
  	-webkit-align-items: center;
  	    -ms-flex-align: center;
  	        align-items: center;
- 	margin: 20px 0;
+ 	margin: 0 auto 10px;
  }
 
  	#mission {
@@ -715,7 +719,7 @@ div#head_content.home {
  	#vision .intro_text,
  	#mission .intro_text {
  		font-size: 1.15em;
- 		width: 50%;
+ 		width: 40%;
  		text-align: center;
  	}
 
@@ -762,10 +766,6 @@ div#head_content.home {
  			margin: 10px 0;
  		}
 
-.col-2, .col-3 {
-	margin: 10px auto;
-}
-
 .col-2 {
 	display:inline-block;
 	width:40%;
@@ -774,12 +774,13 @@ div#head_content.home {
 
 .col-3 {
 	display:inline-block;
-	width: 33.33%;
-	width: calc(100%/3);
+	width: 30%;
+	width: calc(100%/3.33);
 }
 
 #eb-ac {
 	background-color: #F3F3F3;
+	line-height: 150%;
 }
 
 	#eb-ac .circle_icon {
@@ -812,15 +813,9 @@ div#head_content.home {
 		text-decoration: underline;
 	}
 
-#eb-ac .flex-container {
-	padding: 0px;
-}
-
 .avp_container {
 	height:6em;
 	display: table;
-	margin-left: 5%;
-	margin-right: 5%;
 }
 
 .avp_text {
@@ -860,9 +855,6 @@ div#head_content.home {
 	text-decoration: underline;
 }
 
-textarea#name {
-	width: 90%;
-}
 
 /*
  * ----------------
@@ -1043,7 +1035,7 @@ input[type=checkbox]:checked ~ #navigation{
   }
 
   .project_item {
-  	width: 100vw;
+  	width: 100wh;
   }
 
   #eb-ac h2 {

@@ -28,9 +28,9 @@
 				<div class="content_div" id="head_content_div">
 					<h2 class="flex-head">OUR PROJECTS</h2>
 					<div class="flex-container" style="padding-top: 1.5em;">
-						<!-- <div class="circle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p></div> -->
 						<article class="intro_text">
-							<p>CompSAt is a home for students with the same passion for IT. We conduct training sessions through CS and Dev tutorials, hold seminars and competitions, and provide services and outreach programs, all geared towards learning, excellence, and awareness propagation of IT. We also seek to welcome our members through bondings and events that are driven towards bringing members together and making CompSAt their home.</p>
+							<p id="project-intro"><strong>CompSAt is a home for students with the same passion for IT.</strong></p>
+							<p>We provide avenues for people to learn, excel, and appreciate IT. We also seek to welcome our members through bondings and events that are driven towards bringing members together and making CompSAt their home.</p>
 						</article>
 					</div>
 				</div>

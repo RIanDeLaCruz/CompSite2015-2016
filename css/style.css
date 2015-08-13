@@ -606,6 +606,11 @@ div#head_content.home {
 	        align-self: center;
  }
 
+ #project-intro {
+ 	font-size: 1.2em;
+ 	margin: 0 auto 10px;
+ }
+
  .intro_text {
  	width: 30em;
  	margin: 8em 0 8em 0;
@@ -1044,6 +1049,10 @@ input[type=checkbox]:checked ~ #navigation{
   #microsites h3,
   #client-sites h3 {
   	letter-spacing: 0.1em;
+  }
+
+  #project-intro, .intro_text {
+  	text-align: center;
   }
 
   .project_item img, #edrive {

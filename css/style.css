@@ -1006,7 +1006,12 @@ input[type=checkbox]:checked ~ #navigation{
 	}
 
 	#services .details, #add-ons .service, #other-systems .flex-container .details {
-		width: 100%;
+		width: 90%;
+	}
+
+	#services .details,
+	#other-systems .details {
+		margin-left: 1em;
 	}
 
 	#other-systems .flex-container {
@@ -1018,7 +1023,7 @@ input[type=checkbox]:checked ~ #navigation{
 	#services img,
 	#other-systems img {
 		width: 90%;
-		margin-bottom: 1.5em;
+		margin: 1.5em auto;
 	}
 
 	#other-systems .details {

@@ -48,7 +48,7 @@
 		<main id="main">
 			<div class="content_div">
 				<h2>Add-ons</h2>
-				<p class="intro-text">Check out the other features we have in store for you and your website.</p>
+				<p class="intro-text" style="width: 90vw; margin: 0 auto;">Check out the other features we have in store for you and your website.</p>
 				<div id="add-ons" class="flex-container">
 					<div class="service">
 						<img src="images/Services_addon1.png">

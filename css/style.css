@@ -560,8 +560,17 @@ div#head_content.home {
 		background-color: #30A2BF;
 	}
 
-#sponsors_div {
-	/*padding: 4em 1em;*/
+#sponsors_div .info-text {
+	margin: 0 auto;
+	width: 60%;
+}
+
+#sponsors_div a {
+	color: #2EC4B6;
+}
+
+#sponsors_div a:hover {
+	color: #19647E;
 }
 
 #sponsors_div {	background-color: #F3F3F3; }

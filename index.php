@@ -61,9 +61,9 @@
 			<div class="content_div" id="sponsors_div">
 				<h2>SPONSORS</h2>
 				<div class="flex-container">
-					<div class="circle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p></div>
-					<div class="circle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p></div>
-					<div class="circle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p></div>
+					<div class="info-text">
+						<p>If you're interested to become a sponsor of CompSAt, send your inquiries to <a href="mailto:marketing@compsat.org">marketing@compsat.org</a>.</p>
+					</div>
 				</div>
 			</div>
 		</main>

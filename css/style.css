@@ -409,7 +409,7 @@ div#head_content.home {
  	height: 92%;
  	width: 25%;
  	background: transparent url("../images/IndexImage_rgear.png") no-repeat;
- 	background-position: 100% 150%;
+ 	background-position: 100% 125%;
  }
 
  .servers {
@@ -417,15 +417,17 @@ div#head_content.home {
  	height: 100%;
  	width: 35%;
  	background: transparent url("../images/IndexImage_servers.png") no-repeat;
- 	background-position: 100% 0%;
+ 	background-position: 100% 100%;
  }
 
  .desk {
  	left: 0;
- 	height: 50%;
+ 	height: 60%;
  	width: 60%;
+ 	padding-top: 2em;
  	background: transparent url("../images/IndexImage_table.png") no-repeat;
- 	background-position: 100% -50%;
+ 	/*background-position: 100% -50%;*/
+ 	background-position: 100% 150%;
  }
 
  .rgear, .servers, .desk, .corkboard {

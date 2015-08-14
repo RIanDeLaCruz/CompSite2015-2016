@@ -90,7 +90,7 @@
 					$('html, body').animate({
 						scrollTop: $('#what_we_offer').offset().top - 80
 					}, 600, 'swing', function () {
-						window.location.hash = '';
+						window.location.hash = e.target.hash;
 					});
 				});
 			});

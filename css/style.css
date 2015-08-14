@@ -400,6 +400,7 @@ div#head_content.home {
 	  background-size: cover;
 	  background-position: center top;
 	  background-repeat: no-repeat;*/
+	  min-height: 100vh;
 	  overflow: hidden;
 	  position: relative;
 }
@@ -422,7 +423,7 @@ div#head_content.home {
 
  .desk {
  	left: 0;
- 	height: 60%;
+ 	height: 100%;
  	width: 60%;
  	padding-top: 2em;
  	background: transparent url("../images/IndexImage_table.png") no-repeat;
@@ -467,8 +468,8 @@ div#head_content.home {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
+  -ms-flex-line-pack: center;
+      -webkit-align-content: center;
           align-content: center;
  }
 
@@ -809,9 +810,12 @@ div#head_content.home {
  	}
 
  	#core_competencies .flex-container {
- 		-webkit-justify-content: space-around;
- 		    -ms-flex-pack: distribute;
- 		        justify-content: space-around;
+ 		-webkit-justify-content: center;
+ 		    -ms-flex-pack: center;
+ 		        justify-content: center;
+ 		-webkit-align-items: flex-start;
+ 		    -ms-flex-align: start;
+ 		        align-items: flex-start;
  		margin: 0 10%;
  		padding: 1em 0;
  	}
@@ -825,6 +829,7 @@ div#head_content.home {
 
  		.org-goals img {
  			width: 250px;
+ 			background-color: red;
  		}
 
  		.org-goals-info h2,
@@ -1081,7 +1086,7 @@ input[type=checkbox]:checked ~ #navigation{
 
 	.desk {
 		width: 100%;
-		background-position: bottom center;
+		background-position: 100% 100%;
 	}
 
 	.welcome-text {

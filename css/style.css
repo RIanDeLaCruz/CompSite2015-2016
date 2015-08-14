@@ -15,7 +15,7 @@
  */
 @import url("type.css");
 
-body {
+html, body {
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -283,7 +283,7 @@ textarea {
 	width: 30em;
 	text-align: left;
 	-ms-flex-item-align: center;
-	    -webkit-align-self: center;
+	        -webkit-align-self: center;
 	        align-self: center;
 }
 
@@ -399,8 +399,8 @@ div#head_content.home {
 	  /*background-image: url('../images/index-img.png');
 	  background-size: cover;
 	  background-position: center top;
-	  background-repeat: no-repeat;
-	  overflow: hidden;*/
+	  background-repeat: no-repeat;*/
+	  overflow: hidden;
 	  position: relative;
 }
 
@@ -436,13 +436,15 @@ div#head_content.home {
  }
 
  .corkboard {
+ 	display: block;
+ 	position: absolute;
  	top: 5%;
  	left: 1.5%;
- 	bottom: initial;
- 	height: 41.25%;
+ 	height: 43.5%;
  	width: 25%;
  	background: transparent url("../images/IndexImage_board.png") no-repeat;
  	background-position: 100% 100%;
+ 	background-size: 100%;
  }
 
  .welcome-text {
@@ -451,11 +453,21 @@ div#head_content.home {
  	padding: 2% 0;
  	margin-top: 2%;
  	z-index: 6;
+ 	display: -webkit-flex;
+ 	display: -ms-flexbox;
  	display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
  }
 
  	.welcome-text > h2 {
@@ -663,7 +675,7 @@ div#head_content.home {
 	text-align: center;
 	display: table;
 	-ms-flex-item-align: center;
-	    -webkit-align-self: center;
+	        -webkit-align-self: center;
 	        align-self: center;
  }
 
@@ -676,7 +688,7 @@ div#head_content.home {
  	width: 30em;
  	margin: 8em 0 8em 0;
  	-ms-flex-item-align: center;
- 	    -webkit-align-self: center;
+ 	        -webkit-align-self: center;
  	        align-self: center;
  }
 
@@ -908,7 +920,7 @@ div#head_content.home {
 */
 #contactus {
 	-ms-flex-line-pack: start;
-	    -webkit-align-content: flex-start;
+	        -webkit-align-content: flex-start;
 	        align-content: flex-start;
 }
 
@@ -987,26 +999,25 @@ input[type=checkbox]:checked ~ #navigation{
 	        justify-content: space-around;
 }
 @media screen and (max-width: 60em) {
-	div#head_content.home {
-		background-position: center 80px;
+	.corkboard {
+		top: 0%;
 	}
 
 	.welcome-text {
 		width: 40%;
-		height: 55%;
+		height: 40%;
 	}
 
  	.welcome-text > h2 {
- 		font-size: 1.1em;
+ 		font-size: 1.2em;
  	}
 
  	.welcome-text > img {
- 		margin: 0 auto;
+ 		width: 90%;
  	}
 
  	.welcome-text p {
- 		font-size: 0.9em;
- 		margin: 0.1% 10%;
+ 		font-size: 0.95em;
  	}
 }
 

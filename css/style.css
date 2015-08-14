@@ -490,7 +490,7 @@ div#head_content.home {
  		line-height: 1.25;
  	}
 
- 	.welcome-text > a {
+ 	.welcome-text a {
  		display: inline-block;
  		text-align: center;
  		text-decoration: none;
@@ -506,7 +506,7 @@ div#head_content.home {
  		transition: background-color 200ms ease;
  	}
 
- 	.welcome-text > a:hover {
+ 	.welcome-text a:hover {
  		background-color: #FF1D25;
  	}
 

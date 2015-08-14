@@ -172,3 +172,21 @@ function checkAnimationSupport(){
 	var support = animation;
 	return support;
 }
+
+var vp = document.getElementsByClassName('eb-info');
+console.log(typeof vp);
+for (var i = 0; i < vp.length; i++) {
+	var el = vp[i];
+	el.addEventListener('click', function(){
+		var siblings = this.parentNode.querySelectorAll('.avp_container');
+		for(var j = 0; j < siblings.length; j++){
+			console.log(window.getComputedStyle(siblings[j], null).getPropertyValue('display'));
+			var currStyle = window.getComputedStyle(siblings[j], null).getPropertyValue('display');
+			if (currStyle == 'none'){
+				siblings[j].style.display = 'table';
+			} else {
+				siblings[j].style.display = 'none';
+			}
+		}
+	}, false);
+};

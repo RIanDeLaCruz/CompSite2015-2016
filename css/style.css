@@ -1228,4 +1228,18 @@ input[type=checkbox]:checked ~ #navigation{
 		width: 100vw;
 		padding: 0;
 	}
+
+	.eb-info {
+		margin-bottom: 10px;
+	}
+
+	.col-3 .eb-info::after{
+		content:"See AVP\A▼";
+		text-align: center;
+		white-space: pre;
+		position: relative;
+		top: 5px;
+		line-height: 1rem;
+		color: #2EC4B6;
+	}
 }

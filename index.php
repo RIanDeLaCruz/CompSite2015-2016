@@ -44,7 +44,7 @@
 					<div class="item">
 							<img src="images/WhatWeOffer_portfolio.png">
 							<p>We provide you a showcase of the websites that CompSAt has made over the past few years.</p>
-							<a href="portfolio.html" class="button">View Websites We've Made</a>
+							<a href="portfolio.html" class="button">Visit Websites We've Made</a>
 						</div>
 					<div class="item">
 							<img src="images/WhatWeOffer_services.png">

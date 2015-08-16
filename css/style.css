@@ -84,6 +84,7 @@ header {
 nav {
 	position: fixed;
 	top: 0;
+	width: 100%;
 	width: 100vw;
 	height: 80px;
 	padding-right: 2em;
@@ -409,6 +410,7 @@ div#head_content.home {
 	  background-size: cover;
 	  background-position: center top;
 	  background-repeat: no-repeat;*/
+	  min-height: 100%;
 	  min-height: 100vh;
 	  overflow: hidden;
 	  position: relative;
@@ -437,7 +439,7 @@ div#head_content.home {
  	padding-top: 2em;
  	background: transparent url("../images/IndexImage_table.png") no-repeat;
  	/*background-position: 100% -50%;*/
- 	background-position: 100% 150%;
+ 	background-position: 100% 100%;
  }
 
  .rgear, .servers, .desk, .corkboard {
@@ -512,7 +514,19 @@ div#head_content.home {
  		padding: 8px 16px;
  		margin: 10px 0;
  		vertical-align: middle;
- 		transition: background-color 200ms ease;
+ 		-webkit-transition: background-color 200ms ease;
+ 						transition: background-color 200ms ease;
+ 	}
+
+ 	.welcome-text #cta::after {
+ 		content: " ";
+ 		display: block;
+ 		width: 0; 
+		height: 0;
+		margin: 5px auto;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #fff;
  	}
 
  	.welcome-text a:hover {
@@ -562,7 +576,8 @@ div#head_content.home {
 		padding: 8px 16px;
 		margin: 10px 0;
 		vertical-align: middle;
-		transition: background-color 200ms ease;
+		-webkit-transition: background-color 200ms ease;
+						transition: background-color 200ms ease;
 	}
 
 	#what_we_offer .item > a:hover {
@@ -769,8 +784,10 @@ div#head_content.home {
   	margin-bottom: 1em;
 	 	background-position: center center;
 	 	background-size: 115%;
-	 	transition: background-size 400ms ease,
- 								opacity 400ms linear;
+	 	-webkit-transition: background-size 400ms ease,
+ 															opacity 400ms linear;
+					 	transition: background-size 400ms ease,
+							 								opacity 400ms linear;
   }
 
   a .site {
@@ -785,7 +802,8 @@ div#head_content.home {
   a h3 {
   	text-align: left;
   	color: #050505;
-  	transition: opacity 400ms ease;
+  	-webkit-transition: opacity 400ms ease;
+  					transition: opacity 400ms ease;
   }
 
 /*
@@ -970,6 +988,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	min-height: 100%;
 	min-height: 100vh;
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
@@ -1053,6 +1072,7 @@ input[type=checkbox]:checked ~ #navigation{
 	nav ul {
 		position: static;
 		display: none;
+		width: 100%;
 		width: 100vw;
 		margin-top: 4em;
 	}
@@ -1107,6 +1127,7 @@ input[type=checkbox]:checked ~ #navigation{
 	}
 
 	.welcome-text {
+		width: 100%;
 		width: 100vw;
 		height: 70%;
 	}
@@ -1116,6 +1137,7 @@ input[type=checkbox]:checked ~ #navigation{
  	}
 
  	.welcome-text > img {
+ 		width: 90%;
  		width: 90vw;
  		margin: 10px auto;
  	}
@@ -1132,11 +1154,6 @@ input[type=checkbox]:checked ~ #navigation{
  	#head_content .content_div article {
  		width: 40em;
  	}
-
-	#mission p, #vision p {
-		width: 90vw;
-		letter-spacing: 0.02em;
-	}
 
 	#services .details, #add-ons .service, #other-systems .flex-container .details {
 		width: 90%;
@@ -1170,8 +1187,10 @@ input[type=checkbox]:checked ~ #navigation{
   	margin-bottom: 1em;
 	 	background-position: center center;
 	 	background-size: 115%;
-	 	transition: background-size 400ms ease,
- 								opacity 400ms linear;
+ 		-webkit-transition: background-size 400ms ease,
+															opacity 400ms linear;
+					 	transition: background-size 400ms ease,
+							 								opacity 400ms linear;
   }
 
   #microsites h3,
@@ -1234,6 +1253,7 @@ input[type=checkbox]:checked ~ #navigation{
 		width: 90vw;
 	}*/
 	main.content_div flex-container> img{
+		width: 100%;
 		width: 100vw;
 		padding: 0;
 	}

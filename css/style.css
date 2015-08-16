@@ -439,7 +439,7 @@ div#head_content.home {
  	padding-top: 2em;
  	background: transparent url("../images/IndexImage_table.png") no-repeat;
  	/*background-position: 100% -50%;*/
- 	background-position: 100% 100%;
+ 	background-position: 100% 130%;
  }
 
  .rgear, .servers, .desk, .corkboard {
@@ -729,7 +729,6 @@ div#head_content.home {
  }
 
   .project_item {
-  	margin: 2.5% 0;
   	-webkit-align-items: center;
   	    -ms-flex-align: center;
   	        align-items: center;

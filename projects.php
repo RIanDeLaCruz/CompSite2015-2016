@@ -37,25 +37,31 @@
 			</div>
 		</header>
 		<main id="main">
-			<div class="content_div flex-container flex-justify-center project_item">
-				<img src="images/Projects-Dev_Tutorials.jpg" class="order_one">
-				<div class="content order_two">
-					<h2>Development <span style="font-size: 1.15em;">T</span>utorials</h2>
-					<p>Dev Tutorials is a series of hands-on training sessions geared towards honing a person’s skills in developing websites and applications.</p>
+			<div class="content_div flex-container">
+				<div class="flex-container project_item">
+					<img src="images/Projects-Dev_Tutorials.jpg" class="order_one">
+					<div class="content order_two">
+						<h2>Development <span style="font-size: 1.15em;">T</span>utorials</h2>
+						<p>Dev Tutorials is a series of hands-on training sessions geared towards honing a person’s skills in developing websites and applications.</p>
+					</div>
 				</div>
 			</div>
-			<div class="content_div flex-container flex-justify-center project_item">
-				<img id="edrive" src="images/Projects-eDrive.jpg" class="order_two reverse_flex flag">
-				<div class="content order_one reverse_flex">
-					<h2>e-<span style="font-size: 1.15em;">D</span>rive</h2>
-					<p>e-Drive is a campaign that promotes the reduction of electronic waste in different communities near the Loyola Schools through the collection of old gadgets, hardware and electronics for proper disposal and raising awareness regarding the hazards of these waste materials.</p>
+			<div class="content_div flex-container">
+				<div class="flex-container project_item">
+					<img id="edrive" src="images/Projects-eDrive.jpg" class="order_two reverse_flex flag">
+					<div class="content order_one reverse_flex">
+						<h2>e-<span style="font-size: 1.15em;">D</span>rive</h2>
+						<p>e-Drive is a campaign that promotes the reduction of electronic waste in different communities near the Loyola Schools through the collection of old gadgets, hardware and electronics for proper disposal and raising awareness regarding the hazards of these waste materials.</p>
+					</div>
 				</div>
 			</div>
-			<div class="content_div flex-container flex-justify-center project_item">
-				<img src="images/Projects-CompSAt_Week.jpg" class="order_one">
-				<div class="content order_two">
-					<h2>Comp<span style="font-size: 1.15em;">SA</span>t <span style="font-size: 1.15em;">W</span>eek</h2>
-					<p>A flagship project of CompSAt, it’s a week of IT complete with different software, hardware, merchandise, and talk sessions to help increase knowledge and awareness in IT.</p>
+			<div class="content_div flex-container">
+				<div class="flex-container project_item">
+					<img src="images/Projects-CompSAt_Week.jpg" class="order_one">
+					<div class="content order_two">
+						<h2>Comp<span style="font-size: 1.15em;">SA</span>t <span style="font-size: 1.15em;">W</span>eek</h2>
+						<p>A flagship project of CompSAt, it’s a week of IT complete with different software, hardware, merchandise, and talk sessions to help increase knowledge and awareness in IT.</p>
+					</div>
 				</div>
 			</div>
 		</main>

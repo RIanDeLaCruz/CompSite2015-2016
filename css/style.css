@@ -15,11 +15,20 @@
  */
 @import url("type.css");
 
-html, body {
+html {
 	position: relative;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	background-color: #37392E;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: white;
 }
 
 h1, p {
@@ -1188,8 +1197,8 @@ input[type=checkbox]:checked ~ #navigation{
 
   .col-2,
   .col-3 {
-  	width: 33.33%;
-  	width: calc(100%/3);
+  	width: 44.44%;
+  	width: calc(100%/2.25);
   	margin: 0 10px;
   }
 
@@ -1234,12 +1243,27 @@ input[type=checkbox]:checked ~ #navigation{
 	}
 
 	.col-3 .eb-info::after{
-		content:"See AVP\A▼";
+		content:"▼";
 		text-align: center;
 		white-space: pre;
 		position: relative;
 		top: 5px;
 		line-height: 1rem;
 		color: #2EC4B6;
+	}
+
+	.avp_text {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		text-align: center;
+		padding: 0;
+	}
+}
+@media screen and (max-width : 26em){
+	.col-3, .col-2{
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
 	}
 }

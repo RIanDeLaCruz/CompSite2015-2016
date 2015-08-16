@@ -44,17 +44,17 @@
 					<div class="item">
 							<img src="images/WhatWeOffer_portfolio.png">
 							<p>We provide you a showcase of the websites that CompSAt has made over the past few years.</p>
-							<a href="portfolio.html" class="button">Visit Websites We've Made</a>
+							<a href="portfolio.php" class="button">Visit Websites We've Made</a>
 						</div>
 					<div class="item">
 							<img src="images/WhatWeOffer_services.png">
 							<p>CompSAt develops the websites or systems for you. We provide a wide range of add-ons for your sites, from graphics to responsive design.</p>
-							<a href="services.html" class="button">Build a Website with CompSAt</a>
+							<a href="services.php" class="button">Build a Website with CompSAt</a>
 						</div>
 					<div class="item">
 							<img src="images/WhatWeOffer_projects.png">
 							<p>CompSAt develops the websites or systems for you. We provide a wide range of add-ons for your sites, from graphics to responsive design.</p>
-							<a href="projects.html" class="button">Check Out CompSAt's Projects</a>
+							<a href="projects.php" class="button">Check Out CompSAt's Projects</a>
 						</div>
 				</div>
 			</div>

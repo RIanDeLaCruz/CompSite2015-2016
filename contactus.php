@@ -60,16 +60,18 @@
 		<footer>
 			<div class="social-media">
 				<h3>Connect with Us</h3>
-				<a target="_blank" title="Facebook" href="http://facebook.com/CompSAt"><img src="images/ContactUs_fb.png"></a>
+				<a target="_blank" title="Facebook" href="https://www.facebook.com/pages/Computer-Society-of-the-Ateneo-/299828990080524"><img src="images/ContactUs_fb.png"></a>
 				<a target="_blank" title="Twitter" href="http://twitter.com/CompSAt"><img src="images/ContactUs_twitter.png"></a>
 				<a target="_blank" title="Instagram" href="http://instagram.com/compsatgear"><img src="images/ContactUs_ig.png"></a>
 				<a target="_blank" title="Ask.fm" href="http://ask.fm/CompSAtGear"><img src="images/ContactUs_askfm.png"></a>
 			</div>
 			<div class="more-info">
 				<p class="copyright">CompSAt &copy; 2015</p>
-				<p><a href="aboutus.html">About CompSAt</a></p>
-				<p><a href="contactus.html">Contact Us</a></p>
+				<p><a href="aboutus.php">About CompSAt</a></p>
+				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
+			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+			<script type="text/javascript" src="js/jquery.transit.min.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
 		</footer>
 	</body>

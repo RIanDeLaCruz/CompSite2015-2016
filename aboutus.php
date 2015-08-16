@@ -28,18 +28,14 @@
 				<div class="content_div" id="head_content_div">
 					<h2 class="flex-head">ABOUT US</h2>
 					<div class="flex-container" id="vision">
-						<!-- <div class="circle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p></div> -->
 						<article class="intro_text">
-							<!-- <h2>Vision</h2> -->
 							<img src="images/AboutUs_Vision.png">
 							<p>The Computer Society of the Ateneo envisions itself as a community of Ateneans driven to improve the quality of lives through a common passion for Information Technology (IT).
 							</p>
 						</article>
 					</div>
 					<div class="flex-container" id="mission">
-						<!-- <div class="circle order_two reverse_flex flag"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p></div> -->
 						<article class="intro_text order_one reverse_flex">
-							<!-- <h2>Mission</h2> -->
 							<img src="images/AboutUs_Mission.png">
 							<p>CompSAt seeks to <strong>learn IT</strong> through seminars and trainings; to <strong>use IT</strong> by rendering services to individuals and organizations inside and outside of the Ateneo community; and to <strong>share IT</strong> through tutorials and outreach programs while promoting camaraderie and teamwork through interaction and exchange of ideas.
 							</p>
@@ -290,16 +286,18 @@
 		<footer>
 			<div class="social-media">
 				<h3>Connect with Us</h3>
-				<a target="_blank" title="Facebook" href="http://facebook.com/CompSAt"><img src="images/ContactUs_fb.png"></a>
+				<a target="_blank" title="Facebook" href="https://www.facebook.com/pages/Computer-Society-of-the-Ateneo-/299828990080524"><img src="images/ContactUs_fb.png"></a>
 				<a target="_blank" title="Twitter" href="http://twitter.com/CompSAt"><img src="images/ContactUs_twitter.png"></a>
 				<a target="_blank" title="Instagram" href="http://instagram.com/compsatgear"><img src="images/ContactUs_ig.png"></a>
 				<a target="_blank" title="Ask.fm" href="http://ask.fm/CompSAtGear"><img src="images/ContactUs_askfm.png"></a>
 			</div>
 			<div class="more-info">
 				<p class="copyright">CompSAt &copy; 2015</p>
-				<p><a href="aboutus.html">About CompSAt</a></p>
-				<p><a href="contactus.html">Contact Us</a></p>
+				<p><a href="aboutus.php">About CompSAt</a></p>
+				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
+			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+			<script type="text/javascript" src="js/jquery.transit.min.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
 		</footer>
 	</body>

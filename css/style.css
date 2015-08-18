@@ -1255,7 +1255,7 @@ input[type=checkbox]:checked ~ #navigation{
 	}
 
 	.col-3 .eb-info::after{
-		content:"▼";
+		content:"AVPs\A▼";
 		text-align: center;
 		white-space: pre;
 		position: relative;

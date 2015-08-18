@@ -766,11 +766,6 @@ div#head_content.home {
  * Portfolio Page
  * ---------------
  */
-  #microsites .flex-container {
-  	width: auto;
-  	padding: 0px;
-  }
-
   #microsites .flex-container-column,
   #client-sites .flex-container-column {
   	margin: 0 4em 2em;

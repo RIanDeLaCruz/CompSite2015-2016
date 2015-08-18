@@ -300,6 +300,7 @@ textarea {
 .flex-container {
 	padding: 2.5em 1.5em;
 	margin: 0 auto;
+	max-width: 80em;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -765,6 +766,11 @@ div#head_content.home {
  * Portfolio Page
  * ---------------
  */
+  #microsites .flex-container {
+  	width: auto;
+  	padding: 0px;
+  }
+
   #microsites .flex-container-column,
   #client-sites .flex-container-column {
   	margin: 0 4em 2em;

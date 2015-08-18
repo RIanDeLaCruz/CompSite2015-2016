@@ -6,7 +6,8 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Services | Computer Society of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
 	<body>
@@ -162,7 +163,7 @@
 			</div>
 			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 			<script type="text/javascript" src="js/jquery.transit.min.js"></script>
-			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript" src="js/main.min.js"></script>
 		</footer>
 	</body>
 </html>

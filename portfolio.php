@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Portfolio | Computer Society of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
@@ -31,31 +31,31 @@
 					<div id="microsites" class="flex-container">
 						<div class="flex-container-column">
 							<a target="_blank" href="http://gearbox.compsat.org/">
-								<div class="site" style="background-image: url('images/micrositeprev-gearbox.PNG');"></div>
+								<div class="site" style="background-image: url('images/micrositeprev-gearbox.jpg');"></div>
 								<h3>GearBox</h3>
 							</a>
 						</div>
 						<div class="flex-container-column">
 							<a target="_blank" href="http://geekshirtsale.compsat.org/">
-								<div class="site" style="background-image: url('images/micrositeprev-geekshirtsale.PNG');"></div>
+								<div class="site" style="background-image: url('images/micrositeprev-geekshirtsale.jpg');"></div>
 								<h3>Geek Shirt Sale</h3>
 							</a>
 						</div>
 						<div class="flex-container-column">
 							<a target="_blank" href="http://gradecalculator.compsat.org/">
-								<div class="site" style="background-image: url('images/micrositeprev-gradecalc.PNG');"></div>
+								<div class="site" style="background-image: url('images/micrositeprev-gradecalc.jpg');"></div>
 								<h3>Grade Calculator</h3>
 							</a>
 						</div>
 						<div class="flex-container-column">
 							<a target="_blank" href="http://qpi.compsat.org/">
-								<div class="site" style="background-image: url('images/micrositeprev-qpicalc.PNG');"></div>
+								<div class="site" style="background-image: url('images/micrositeprev-qpicalc.jpg');"></div>
 								<h3>QPI Calculator</h3>
 							</a>
 						</div>
 						<div class="flex-container-column">
 							<a target="_blank" href="http://wildcard.compsat.org/">
-								<div class="site" style="background-image: url('images/micrositeprev-wildcard.PNG');"></div>
+								<div class="site" style="background-image: url('images/micrositeprev-wildcard.jpg');"></div>
 								<h3>Wildcard</h3>
 							</a>
 						</div>
@@ -69,19 +69,19 @@
 				<div id="client-sites" class="flex-container">
 					<div class="flex-container-column">
 						<a target="_blank" href="http://heights-ateneo.org/">
-							<div class="site" style="background-image: url('images/clientprev-heights.PNG');"></div>
+							<div class="site" style="background-image: url('images/clientprev-heights.jpg');"></div>
 							<h3>Heights Ateneo</h3>
 						</a>
 					</div>
 					<div class="flex-container-column">
 						<a target="_blank" href="http://bluerepertory.org/">
-							<div class="site" style="background-image: url('images/clientprev-bluerep.PNG');"></div>
+							<div class="site" style="background-image: url('images/clientprev-bluerep.jpg');"></div>
 							<h3>Ateneo Blue Repertory</h3>
 						</a>
 					</div>
 					<div class="flex-container-column">
 						<a target="_blank" href="http://mannygaribay.com/">
-							<div class="site" style="background-image: url('images/cilentprev-mannygaribay.PNG');"></div>
+							<div class="site" style="background-image: url('images/cilentprev-mannygaribay.jpg');"></div>
 							<h3>Manny Garibay</h3>
 						</a>
 					</div>

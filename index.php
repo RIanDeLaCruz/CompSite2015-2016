@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>CompSAt | Premier IT Organization of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
@@ -25,10 +25,10 @@
 			</nav>
 			<div id="head_content" class="home" style="height: 90vh;">
 					<div class="welcome-text">
-						<h2 style="font-family:'Lucida Console', Monaco, monospace; letter-spacing: 0; text-transform: initial;">Hello World! Welcome to</h2>
+						<h2 style="font-family:'Lucida Console', Monaco, monospace; letter-spacing: 0; text-transform: initial;">Hello, World! Welcome to</h2>
 						<img src="images/CompSAtLogo.png">
 						<br>
-						<p>We strive to help members by providing new avenues to <strong>learn IT</strong>, to create systems and render services to <strong>use IT</strong>, and to help out the community and <strong>share IT</strong>.</p>
+						<p>We strive to provide members with avenues to <strong>learn IT</strong>, to create systems and render services that allow us to <strong>use IT</strong>, and to extend ourselves to <strong>share IT</strong> with the community.</p>
 						<a href="#what_we_offer" id="cta">Read More</a>
 					</div>
 				<div class="servers">&nbsp;</div>
@@ -43,18 +43,18 @@
 				<div class="flex-container">
 					<div class="item">
 							<img src="images/WhatWeOffer_portfolio.png">
-							<p>We provide you a showcase of the websites that CompSAt has made over the past few years.</p>
-							<a href="portfolio.php" class="button">Visit Websites We've Made</a>
+							<p>We provide a showcase of the websites that CompSAt has developed over the past few years.</p>
+							<a href="portfolio.php" class="button">View Our Portfolio</a>
 						</div>
 					<div class="item">
 							<img src="images/WhatWeOffer_services.png">
-							<p>CompSAt develops the websites or systems for you. We provide a wide range of add-ons for your sites, from graphics to responsive design.</p>
-							<a href="services.php" class="button">Build a Website with CompSAt</a>
+							<p>We provide services to develop websites or systems. We offer a wide range of add-ons, including graphics and responsive design.</p>
+							<a href="services.php" class="button">Start A Project With Us</a>
 						</div>
 					<div class="item">
 							<img src="images/WhatWeOffer_projects.png">
-							<p>CompSAt develops the websites or systems for you. We provide a wide range of add-ons for your sites, from graphics to responsive design.</p>
-							<a href="projects.php" class="button">Check Out CompSAt's Projects</a>
+							<p>We provide avenues for our members to explore the IT world and learn from these experiences.</p>
+							<a href="projects.php" class="button">See Us in Action</a>
 						</div>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 				<h2>SPONSORS</h2>
 				<div class="flex-container">
 					<div class="info-text">
-						<p>If you're interested to become a sponsor of CompSAt, send your inquiries to <a href="mailto:marketing@compsat.org">marketing@compsat.org</a>.</p>
+						<p>If you're interested in becoming a CompSAt sponsor, send your inquiries to <a href="mailto:marketing@compsat.org">marketing@compsat.org</a>.</p>
 					</div>
 				</div>
 			</div>

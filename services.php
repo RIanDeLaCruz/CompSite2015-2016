@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Services | Computer Society of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
@@ -34,12 +34,12 @@
 							<div class="service">
 								<h2>New Domain</h2>
 								<p class="price">P1,000.00+</p>
-								<p class="description">Acquire or a renew a domain with hosting. Price may vary depending on the type, availability and extension of the domain.</p>
+								<p class="description">Acquire or a renew a domain with hosting. Prices may vary depending on the type, availability, and extension of the domain.</p>
 							</div>
 							<div class="service">
 								<h2>Website</h2>
-								<p class="price">P275.00/hr, 20-hr minimum</p>
-								<p class="description">Have a website built from scratch with custom fonts, colors, icons, and images. Time required to finish depends on the design, complexity, and features of the site.</p>
+								<p class="price">P275.00/hr, minimum of 20 hours</p>
+								<p class="description">Have a website built from scratch with custom fonts, colors, icons, and images. Estimates of the time required to complete a project depends on the design, complexity, and features of the site.</p>
 							</div>
 						</div>
 					</div>
@@ -49,7 +49,6 @@
 		<main id="main">
 			<div class="content_div">
 				<h2>Add-ons</h2>
-				<p class="intro-text" style="width: 90vw; margin: 0 auto;">Check out the other features we have in store for you and your website.</p>
 				<div id="add-ons" class="flex-container">
 					<div class="service">
 						<img src="images/Services_addon1.png">
@@ -108,7 +107,7 @@
 					<div class="details">
 							<div class="service">
 								<h3>Member Tracking System</h3>
-								<p class="price">P250.00/hr, 30-hr minimum</p>
+								<p class="price">P250.00/hr, minimum of 30 hours</p>
 								<p class="description">A system for helping orgs keep track of their members. The system is customized to the needs of the org. Possible uses: point system, family system, etc.</p>
 							</div>
 							<div class="service">
@@ -118,33 +117,10 @@
 							</div>
 							<div class="service">
 								<h3>Custom System</h3>
-								<p class="price">P320.00/hr, 30-hr minimum</p>
+								<p class="price">P320.00/hr, minimum of 30 hours</p>
 								<p class="description">A fully-customized system catered to any purpose in any of the following platforms: iOS, Android, Java, Python, C++, and more.</p>
 							</div>
 						</div>
-				</div>
-			</div>
-			<div class="content_div" id="showcase">
-				<h3 class="flex-head">Showcase</h3>
-				<div id="client-sites" class="flex-container">
-					<div class="flex-container-column">
-						<a target="_blank" href="http://heights-ateneo.org/">
-							<div class="site" style="background-image: url('images/clientprev-heights.PNG');"></div>
-							<h3>Heights Ateneo</h3>
-						</a>
-					</div>
-					<div class="flex-container-column">
-						<a target="_blank" href="http://bluerepertory.org/">
-							<div class="site" style="background-image: url('images/clientprev-bluerep.PNG');"></div>
-							<h3>Ateneo Blue Repertory</h3>
-						</a>
-					</div>
-					<div class="flex-container-column">
-						<a target="_blank" href="http://mannygaribay.com/">
-							<div class="site" style="background-image: url('images/cilentprev-mannygaribay.PNG');"></div>
-							<h3>Manny Garibay</h3>
-						</a>
-					</div>
 				</div>
 			</div>
 		</main>

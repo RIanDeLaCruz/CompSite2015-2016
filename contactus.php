@@ -28,7 +28,7 @@
 					<h2 class="flex-head">CONTACT US</h2>
 					<div class="social-media">
 						<div class="details">
-							<p><strong>Address:</strong><br>Room 303, MVP – Center for Student Leadership, Ateneo de Manila University, Katipunan, Quezon City</p>
+							<p><strong>Address:</strong><br>Room 303, MVP Center for Student Leadership, Ateneo de Manila University, Katipunan, Quezon City</p>
 							<br>
 							<p><h4 style="margin: 0; font-size: 1.1em;">Mark Robert M. Aldecimo</h4></p>
 							<p style="color: #19647E;"><strong>CompSAt President</strong></p>

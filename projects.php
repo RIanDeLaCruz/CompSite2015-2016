@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Projects | Computer Society of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
@@ -30,7 +30,7 @@
 					<div class="flex-container" style="padding-top: 1.5em;">
 						<article class="intro_text">
 							<p id="project-intro"><strong>CompSAt is a home for students with the same passion for IT.</strong></p>
-							<p>We provide avenues for people to learn, excel, and appreciate IT. We also seek to welcome our members through bondings and events that are driven towards bringing members together and making CompSAt their home.</p>
+							<p>We provide avenues for appreciating, learning, and excelling in IT. We also seek to form our members through bonding activities and events that are driven towards bringing members together and making CompSAt a place where they belong.</p>
 						</article>
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 					<img id="edrive" src="images/Projects-eDrive.jpg" class="order_two reverse_flex flag">
 					<div class="content order_one reverse_flex">
 						<h2>e-<span style="font-size: 1.15em;">D</span>rive</h2>
-						<p>e-Drive is a campaign that promotes the reduction of electronic waste in different communities near the Loyola Schools through the collection of old gadgets, hardware and electronics for proper disposal and raising awareness regarding the hazards of these waste materials.</p>
+						<p>e-Drive is a campaign that promotes the reduction of electronic waste in different communities near the Loyola Schools. The campaign aims to collect old gadgets, hardware, and electronics in order to properly dispose them and raise awareness regarding the hazards of these waste materials.</p>
 					</div>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 					<img src="images/Projects-CompSAt_Week.jpg" class="order_one">
 					<div class="content order_two">
 						<h2>Comp<span style="font-size: 1.15em;">SA</span>t <span style="font-size: 1.15em;">W</span>eek</h2>
-						<p>A flagship project of CompSAt, it’s a week of IT complete with different software, hardware, merchandise, and talk sessions to help increase knowledge and awareness in IT.</p>
+						<p>A flagship project of CompSAt, it’s a week of IT&mdash;complete with different software, hardware, merchandise, and lectures&mdash;that aims to increase knowledge in and awareness of IT.</p>
 					</div>
 				</div>
 			</div>

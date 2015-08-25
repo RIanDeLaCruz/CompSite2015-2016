@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>About Us | Computer Society of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
@@ -61,7 +61,7 @@
 						<div class="content-column org-goals-info">
 							<h2>USE I.T.</h2>
 							<h4>I.T. Services</h4>
-							<p>We provide sustainable, effective and high-quality IT-related services for students, as well as commercial and nonprofit organizations based within and outside the Ateneo community.</p>
+							<p>We provide sustainable, effective, and high-quality IT-related services for students, as well as commercial and nonprofit organizations based within and outside the Ateneo community.</p>
 						</div>
 					</div>
 					<div class="flex-container-column org-goals">

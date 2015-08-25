@@ -72,7 +72,7 @@
 			</div>
 			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 			<script type="text/javascript" src="js/jquery.transit.min.js"></script>
-			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript" src="js/main.min.js"></script>
 		</footer>
 	</body>
 </html>

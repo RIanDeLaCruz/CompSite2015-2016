@@ -69,7 +69,7 @@
 						<div class="content-column org-goals-info">
 							<h2>SHARE I.T.</h2>
 							<h4>I.T. Awareness Propagation</h4>
-							<p>We want to promote awareness and appreciation of IT and its most recent developments to people outside the community of IT enthusiasts.</p>
+							<p>We promote awareness and appreciation of IT and its most recent developments to people outside the community of IT enthusiasts.</p>
 						</div>
 					</div>
 				</div>

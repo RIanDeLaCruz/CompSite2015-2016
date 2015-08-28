@@ -39,7 +39,7 @@
 							<div class="service">
 								<h2>Website</h2>
 								<p class="price">P275.00/hr, minimum of 20 hours</p>
-								<p class="description">Have a website built from scratch with custom fonts, colors, icons, and images. Estimates of the time required to complete a project depends on the design, complexity, and features of the site.</p>
+								<p class="description">Build a website from scratch with custom fonts, colors, icons, and images. Estimates of the time required to complete a project depends on the design, complexity, and features of the site.</p>
 							</div>
 						</div>
 					</div>
@@ -55,7 +55,7 @@
 						<div class="feature">
 							<h3>Content Management System</h3>
 							<p class="price">P2,750.00+</p>
-							<p class="description">Allows for the management of regularly-updated content (news articles, gallery, posts, etc.) within the site in an easy-to-use interface accessible to non-developers.</p>
+							<p class="description">Allow management of regularly-updated content (news articles, gallery, posts, etc.) within the site in an easy-to-use interface accessible to non-developers</p>
 						</div>
 					</div>
 					<div class="service">
@@ -63,7 +63,7 @@
 						<div class="feature">
 							<h3>Graphics</h3>
 							<p class="price">P1,000.00</p>
-							<p class="description">Have custom graphics be made for use in the site or elsewhere.</p>
+							<p class="description">Add custom graphics for use in the site or elsewhere</p>
 						</div>
 					</div>
 					<div class="service">
@@ -71,7 +71,7 @@
 						<div class="feature">
 							<h3>Responsive Design</h3>
 							<p class="price">P1,000.00</p>
-							<p class="description">Optimizes the site for use on mobile devices.</p>
+							<p class="description">Optimize the site for use on mobile devices</p>
 						</div>
 					</div>
 					<div class="service">
@@ -79,7 +79,7 @@
 						<div class="feature">
 							<h3>Search Engine Optimization</h3>
 							<p class="price">P500.00</p>
-							<p class="description">Optimizes the site for greater accessibility across online search engines.</p>
+							<p class="description">Optimize the site for greater accessibility across online search engines</p>
 						</div>
 					</div>
 					<div class="service">
@@ -87,7 +87,7 @@
 						<div class="feature">
 							<h3>Google Analytics Functionality</h3>
 							<p class="price">P750.00</p>
-							<p class="description">Enable website usage statistics.</p>
+							<p class="description">Enable website usage statistics</p>
 						</div>
 					</div>
 					<div class="service">
@@ -95,7 +95,7 @@
 						<div class="feature">
 							<h3>E-Commerce Functionality</h3>
 							<p class="price">P3,500.00+</p>
-							<p class="description">Allows for the selling of goods and services on the site.</p>
+							<p class="description">Allow selling of goods and services on the site</p>
 						</div>
 					</div>
 				</div>

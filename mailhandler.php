@@ -23,7 +23,7 @@
 	    
 
 	    #mail("basil.begonia@gmail.com", "New Geekshirt Order [".$firstname." ".$lastname."]", $body);
-	    mail("mark@compsat.org", "[CompSAt Website Contact Form]", $body);
+	    mail("hello@compsat.org", "[CompSAt Website Contact Form]", $body);
 	    header ("Location: thanks.php");
   }
     

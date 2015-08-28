@@ -30,10 +30,8 @@
 						<div class="details">
 							<p><strong>Address:</strong><br>Room 303, MVP Center for Student Leadership, Ateneo de Manila University, Katipunan, Quezon City</p>
 							<br>
-							<p><h4 style="margin: 0; font-size: 1.1em;">Mark Robert M. Aldecimo</h4></p>
-							<p style="color: #19647E;"><strong>CompSAt President</strong></p>
-							<p>0916-668-5502</p>
-							<p class="email"><a href="mailto:mark@compsat.org">mark@compsat.org</a></p>
+							<p><strong>Contact Details:</strong><br>0908-343-5801</p>
+							<p class="email"><a href="mailto:hello@compsat.org">hello@compsat.org</a></p>
 						</div>
 					</div>
 					<div id="form" class="content_div">

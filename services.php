@@ -34,7 +34,7 @@
 							<div class="service">
 								<h2>New Domain</h2>
 								<p class="price">P1,000.00+</p>
-								<p class="description">Acquire or a renew a domain with hosting. Prices may vary depending on the type, availability, and extension of the domain.</p>
+								<p class="description">Acquire or renew a domain with hosting. Prices may vary depending on the type, availability, and extension of the domain.</p>
 							</div>
 							<div class="service">
 								<h2>Website</h2>
@@ -95,7 +95,7 @@
 						<div class="feature">
 							<h3>E-Commerce Functionality</h3>
 							<p class="price">P3,500.00+</p>
-							<p class="description">Allow selling of goods and services on the site</p>
+							<p class="description">Allow the selling of goods and services on the site</p>
 						</div>
 					</div>
 				</div>
@@ -108,17 +108,17 @@
 							<div class="service">
 								<h3>Member Tracking System</h3>
 								<p class="price">P250.00/hr, minimum of 30 hours</p>
-								<p class="description">A system for helping orgs keep track of their members. The system is customized to the needs of the org. Possible uses: point system, family system, etc.</p>
+								<p class="description">A system for helping orgs keep track of their members, and will be customized to the needs of the org<br>Possible uses: point system, family system, etc.</p>
 							</div>
 							<div class="service">
 								<h3>Registration System</h3>
 								<p class="price">P3,000.00</p>
-								<p class="description">A system for simplifying member registration during events. Can be integrated with the member tracking system.</p>
+								<p class="description">A system for simplifying member registration during events, and can be integrated with the member tracking system</p>
 							</div>
 							<div class="service">
 								<h3>Custom System</h3>
 								<p class="price">P320.00/hr, minimum of 30 hours</p>
-								<p class="description">A fully-customized system catered to any purpose in any of the following platforms: iOS, Android, Java, Python, C++, and more.</p>
+								<p class="description">A fully-customized system catered to any purpose in any of the following platforms: iOS, Android, Java, Python, C++, etc.</p>
 							</div>
 						</div>
 				</div>

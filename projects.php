@@ -51,7 +51,7 @@
 					<img id="edrive" src="images/Projects-eDrive.jpg" class="order_two reverse_flex flag">
 					<div class="content order_one reverse_flex">
 						<h2>e-<span style="font-size: 1.15em;">D</span>rive</h2>
-						<p>e-Drive is a campaign that promotes the reduction of electronic waste in different communities near the Loyola Schools. The campaign aims to collect old gadgets, hardware, and electronics in order to properly dispose them and raise awareness regarding the hazards of these waste materials.</p>
+						<p>e-Drive is a campaign that promotes the reduction of electronic waste in different communities near the Loyola Schools. The campaign aims to collect old gadgets, hardware, and electronics in order to properly dispose of them and raise awareness regarding the hazards of these waste materials.</p>
 					</div>
 				</div>
 			</div>

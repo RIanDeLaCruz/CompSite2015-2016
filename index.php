@@ -49,7 +49,7 @@
 					<div class="item">
 							<img src="images/WhatWeOffer_services.png">
 							<p>We provide services to develop websites or systems. We offer a wide range of add-ons, including graphics and responsive design.</p>
-							<a href="services.php" class="button">Start A Project With Us</a>
+							<a href="services.php" class="button">Start a Project with Us</a>
 						</div>
 					<div class="item">
 							<img src="images/WhatWeOffer_projects.png">

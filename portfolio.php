@@ -64,7 +64,7 @@
 			</div>
 		</header>
 		<main id="main">
-			<div class="content_div">
+			<div class="content_div" style="background-color: #F3F3F3;">
 				<h3 class="flex-head">Client Sites</h3>
 				<div id="client-sites" class="flex-container">
 					<div class="flex-container-column">

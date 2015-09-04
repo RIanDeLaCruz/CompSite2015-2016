@@ -62,7 +62,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>Graphics</h3>
-							<p class="price">P1,000.00</p>
+							<p class="price">P1,000.00+</p>
 							<p class="description">Add custom graphics for use in the site or elsewhere</p>
 						</div>
 					</div>

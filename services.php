@@ -33,12 +33,12 @@
 						<div class="details">
 							<div class="service">
 								<h2>New Domain</h2>
-								<p class="price">P1,000.00+</p>
+								<p class="price">&#8369;1,000.00+</p>
 								<p class="description">Acquire or renew a domain with hosting. Prices may vary depending on the type, availability, and extension of the domain.</p>
 							</div>
 							<div class="service">
 								<h2>Website</h2>
-								<p class="price">P275.00/hr, minimum of 20 hours</p>
+								<p class="price">&#8369;275.00/hr, minimum of 20 hours</p>
 								<p class="description">Build a website from scratch with custom fonts, colors, icons, and images. Estimates of the time required to complete a project depends on the design, complexity, and features of the site.</p>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>Content Management System</h3>
-							<p class="price">P2,750.00+</p>
+							<p class="price">&#8369;2,750.00+</p>
 							<p class="description">Allow management of regularly-updated content (news articles, gallery, posts, etc.) within the site in an easy-to-use interface accessible to non-developers</p>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>Graphics</h3>
-							<p class="price">P1,000.00+</p>
+							<p class="price">&#8369;1,000.00+</p>
 							<p class="description">Add custom graphics for use in the site or elsewhere</p>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>Responsive Design</h3>
-							<p class="price">P1,000.00</p>
+							<p class="price">&#8369;1,000.00</p>
 							<p class="description">Optimize the site for use on mobile devices</p>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>Search Engine Optimization</h3>
-							<p class="price">P500.00</p>
+							<p class="price">&#8369;500.00</p>
 							<p class="description">Optimize the site for greater accessibility across online search engines</p>
 						</div>
 					</div>
@@ -86,7 +86,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>Google Analytics Functionality</h3>
-							<p class="price">P750.00</p>
+							<p class="price">&#8369;750.00</p>
 							<p class="description">Enable website usage statistics</p>
 						</div>
 					</div>
@@ -94,7 +94,7 @@
 						<img src="images/Services_addon1.png">
 						<div class="feature">
 							<h3>E-Commerce Functionality</h3>
-							<p class="price">P3,500.00+</p>
+							<p class="price">&#8369;3,500.00+</p>
 							<p class="description">Allow the selling of goods and services on the site</p>
 						</div>
 					</div>
@@ -107,17 +107,17 @@
 					<div class="details">
 							<div class="service">
 								<h3>Member Tracking System</h3>
-								<p class="price">P250.00/hr, minimum of 30 hours</p>
+								<p class="price">&#8369;250.00/hr, minimum of 30 hours</p>
 								<p class="description">A system for helping orgs keep track of their members, and will be customized to the needs of the org<br>Possible uses: point system, family system, etc.</p>
 							</div>
 							<div class="service">
 								<h3>Registration System</h3>
-								<p class="price">P3,000.00</p>
+								<p class="price">&#8369;3,000.00</p>
 								<p class="description">A system for simplifying member registration during events, and can be integrated with the member tracking system</p>
 							</div>
 							<div class="service">
 								<h3>Custom System</h3>
-								<p class="price">P320.00/hr, minimum of 30 hours</p>
+								<p class="price">&#8369;320.00/hr, minimum of 30 hours</p>
 								<p class="description">A fully-customized system catered to any purpose in any of the following platforms: iOS, Android, Java, Python, C++, etc.</p>
 							</div>
 						</div>

@@ -589,6 +589,21 @@ div#head_content.home {
 		background-color: #30A2BF;
 	}
 
+#sponsors_div {	background-color: #F3F3F3; }
+
+#sponsors_div .flex-container {
+	flex-direction: column;
+	padding: 0;
+}
+
+#sponsors_div .flex-container div {
+	padding: 2.5%;
+}
+
+#sponsors_div img {
+	width: 25%;
+}
+
 #sponsors_div .info-text {
 	margin: 0 auto;
 	width: 60%;
@@ -601,9 +616,6 @@ div#head_content.home {
 #sponsors_div a:hover {
 	color: #19647E;
 }
-
-#sponsors_div {	background-color: #F3F3F3; }
-
 
 /*
  * ---------------

@@ -70,6 +70,9 @@
 			<div class="content_div" id="sponsors_div">
 				<h2>SPONSORS</h2>
 				<div class="flex-container">
+					<div class="sponsors">
+						<a href="http://www.azeus.com/" target="_blank"><img src="images/sponsor-azeus.jpg" alt="Azeus"></a>
+					</div>
 					<div class="info-text">
 						<p>If you're interested in becoming a CompSAt sponsor, send your inquiries to <a href="mailto:marketing@compsat.org">marketing@compsat.org</a>.</p>
 					</div>

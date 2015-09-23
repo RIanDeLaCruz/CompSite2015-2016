@@ -594,14 +594,19 @@ div#head_content.home {
 #sponsors_div .flex-container {
 	flex-direction: column;
 	padding: 0;
+
 }
 
 #sponsors_div .flex-container div {
 	padding: 2.5%;
+	margin: 0 auto;
+	display: inherit;
+	align-items: center;
 }
 
 #sponsors_div img {
-	width: 25%;
+	width: 25em;
+	margin: 0 2em;
 }
 
 #sponsors_div .info-text {
@@ -1167,6 +1172,11 @@ input[type=checkbox]:checked ~ #navigation{
 
  	#what_we_offer .item {
  		margin-bottom: 1em;
+ 	}
+
+ 	#sponsors_div img {
+ 		width: 50%;
+ 		margin: 1em auto;
  	}
 
  	#head_content .content_div article {

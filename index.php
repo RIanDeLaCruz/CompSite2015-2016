@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>CompSAt | Premier IT Organization of the Ateneo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -71,7 +71,8 @@
 				<h2>SPONSORS</h2>
 				<div class="flex-container">
 					<div class="sponsors">
-						<a href="http://www.azeus.com/" target="_blank"><img src="images/sponsor-azeus.jpg" alt="Azeus"></a>
+						<a href="http://www.azeus.com/" target="_blank"><img src="images/sponsor-azeus.jpg" title="Azeus"></a>
+						<a href="http://orangeandbronze.com/" target="_blank"><img src="images/sponsor-onb.jpg" title="Orange &amp; Bronze"></a>
 					</div>
 					<div class="info-text">
 						<p>If you're interested in becoming a CompSAt sponsor, send your inquiries to <a href="mailto:marketing@compsat.org">marketing@compsat.org</a>.</p>

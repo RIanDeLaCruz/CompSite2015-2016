@@ -88,7 +88,7 @@
 				<!-- TOP TWO -->
 				<div class="flex-container">
 					<div class="col-2 eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/president.jpg');"></div>
 						<p>
 							<span class="name">Mark Robert M. Aldecimo</span><br>
 							<span class="position">President</span><br>
@@ -96,7 +96,7 @@
 						</p>
 					</div>
 					<div class="col-3 eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/evp.jpg');"></div>
 						<p>
 							<span class="name">Carlo Luis G. De Guzman</span><br>
 							<span class="position">Executive Vice President</span><br>
@@ -108,7 +108,7 @@
 				<!-- SEC/EA/FnM -->
 				<div class="col-3">
 					<div class="eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/secgen.jpg');"></div>
 						<p>
 							<span class="name">Isabel M. Constantino</span><br>
 							<span class="position">Secretary-General</span><br>
@@ -116,7 +116,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-doc.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Jan Nicole N. Domingo</span><br>
 							<span class="position">AVP for Documentation</span><br>
@@ -124,7 +124,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-pub.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Chiara Veronica D. Se&ntilde;ires</span><br>
 							<span class="position">AVP for Publication</span><br>
@@ -134,7 +134,7 @@
 				</div>
 				<div class="col-3">
 					<div class="eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/vp-ea.jpg');"></div>
 						<p>
 							<span class="name">Erika Faye R. Cerezo</span><br>
 							<span class="position">VP for External Affairs</span><br>
@@ -142,7 +142,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-commrel.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Seth Andrei L. Legaspi</span><br>
 							<span class="position">AVP for Community Relations</span><br>
@@ -150,7 +150,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-schorel.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Pearl Jen C. Santos</span><br>
 							<span class="position">AVP for Scholastic Relations</span><br>
@@ -158,7 +158,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-univrel.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Viktor Mikhael M. Dela Cruz</span><br>
 							<span class="position">AVP for University Relations</span><br>
@@ -168,7 +168,7 @@
 				</div>
 				<div class="col-3">
 					<div class="eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/vp-fnm.jpg');"></div>
 						<p>
 							<span class="name">Ma. Reyana L. Leonardo</span><br>
 							<span class="position">VP for Finance and Marketing</span><br>
@@ -176,7 +176,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-finance.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Vermille Ann T. Saw</span><br>
 							<span class="position">AVP for Finance</span><br>
@@ -184,7 +184,7 @@
 						</p>
 					</div>
 					<!-- <div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-marketing.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Jose Luis P. Bayoneta</span><br>
 							<span class="position">AVP for Corporate Relations</span><br>
@@ -196,7 +196,7 @@
 				<!-- IA/LnP/RnD -->
 				<div class="col-3">
 					<div class="eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/vp-ia.jpg');"></div>
 						<p>
 							<span class="name">Pia Melissa M. Encarnacion</span><br>
 							<span class="position">VP for Internal Affairs</span><br>
@@ -204,7 +204,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-events.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">John Paulo C. Pascua</span><br>
 							<span class="position">AVP for Events</span><br>
@@ -212,7 +212,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-formation.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Dennis Andrew R. Villamor</span><br>
 							<span class="position">AVP for Formation</span><br>
@@ -222,7 +222,7 @@
 				</div>
 				<div class="col-3">
 					<div class="eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/vp-lnp.jpg');"></div>
 						<p>
 							<span class="name">John Michael B. Santos</span><br>
 							<span class="position">VP for Logistics and Promotions</span><br>
@@ -230,7 +230,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-log.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Gio Nyco L. Ramos</span><br>
 							<span class="position">AVP for Logistics</span><br>
@@ -238,7 +238,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-promos.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Miguel N. Galace</span><br>
 							<span class="position">AVP for Promotions</span><br>
@@ -248,7 +248,7 @@
 				</div>
 				<div class="col-3">
 					<div class="eb-info">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/vp-rnd.jpg');"></div>
 						<p>
 							<span class="name">Basil Miguel B. Begonia</span><br>
 							<span class="position">VP for Research and Development</span><br>
@@ -256,7 +256,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-dev.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Anton Miguel S. Suba</span><br>
 							<span class="position">AVP for Development</span><br>
@@ -264,7 +264,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-services.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Sean Andrew Y. Rafanan</span><br>
 							<span class="position">AVP for Services</span><br>
@@ -272,7 +272,7 @@
 						</p>
 					</div>
 					<div class="avp_container">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-training.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">Jenina Isabel L. Sanchez</span><br>
 							<span class="position">AVP for Training</span><br>
@@ -282,7 +282,7 @@
 				</div>
 				<div style="width:100%;">
 					<div class="flex-container" id="moderator">
-						<div class="circle_icon"></div>
+						<div class="circle_icon" style="background-image: url('images/EB+AC/moderator.jpg');"></div>
 						<p>
 							<span class="name">Jessica O. Sugay</span><br>
 							<span class="position">Moderator</span><br>

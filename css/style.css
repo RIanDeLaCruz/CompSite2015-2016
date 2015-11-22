@@ -13,7 +13,7 @@
  *
  *
  */
-@import url("type.css");
+@import url("type.min.css");
 
 html {
 	position: relative;
@@ -594,20 +594,27 @@ div#head_content.home {
 #sponsors_div .flex-container {
 	flex-direction: column;
 	padding: 0;
-
 }
 
 #sponsors_div .flex-container div {
-	padding: 2.5%;
+	padding: 2%;
 	margin: 0 auto;
 	display: inherit;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 }
 
 #sponsors_div img {
 	width: 25em;
-	margin: 0 2em;
+	margin: 0.25em 2em 0;
 }
+
+	/* For sizing purposes */
+	#sponsors_div #azeus,
+	#sponsors_div #hpe {
+		width: 17em;
+	}
 
 #sponsors_div .info-text {
 	margin: 0 auto;
@@ -1174,10 +1181,22 @@ input[type=checkbox]:checked ~ #navigation{
  		margin-bottom: 1em;
  	}
 
- 	#sponsors_div img {
- 		width: 50%;
- 		margin: 1em auto;
+ 	#sponsors_div .flex-container div {
+ 		margin-bottom: 1em;
  	}
+
+		 	#sponsors_div img {
+		 		width: 75%;
+		 		margin: 0.5em auto;
+		 	}
+
+ 		#sponsors_div #azeus {
+ 			width: 50%;
+ 		}
+
+ 		#sponsors_div #hpe {
+ 			width: 60%;
+ 		}
 
  	#head_content .content_div article {
  		width: 40em;

@@ -71,8 +71,10 @@
 				<h2>SPONSORS</h2>
 				<div class="flex-container">
 					<div class="sponsors">
-						<a href="http://www.azeus.com/" target="_blank"><img src="images/sponsor-azeus.jpg" title="Azeus"></a>
+						<a href="http://www.azeus.com/" target="_blank"><img src="images/sponsor-azeus.jpg" title="Azeus" id="azeus"></a>
 						<a href="http://orangeandbronze.com/" target="_blank"><img src="images/sponsor-onb.jpg" title="Orange &amp; Bronze"></a>
+						<a href="http://www.saperium.com/" target="_blank"><img src="images/sponsor-saperium.jpg" title="Saperium"></a>
+						<img src="images/sponsor-hpe.png" title="Hewlett Packard Enterprise" id="hpe">
 					</div>
 					<div class="info-text">
 						<p>If you're interested in becoming a CompSAt sponsor, send your inquiries to <a href="mailto:marketing@compsat.org">marketing@compsat.org</a>.</p>

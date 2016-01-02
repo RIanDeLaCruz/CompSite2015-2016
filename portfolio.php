@@ -106,7 +106,7 @@
 				<a target="_blank" title="Ask.fm" href="http://ask.fm/CompSAtGear"><img src="images/ContactUs_askfm.png"></a>
 			</div>
 			<div class="more-info">
-				<p class="copyright">CompSAt &copy; 2015</p>
+				<p class="copyright">CompSAt &copy; 2016</p>
 				<p><a href="aboutus.php">About CompSAt</a></p>
 				<p><a href="contactus.php">Contact Us</a></p>
 			</div>

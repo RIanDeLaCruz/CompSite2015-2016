@@ -183,14 +183,14 @@
 							<span class="email"><a href="mailto:vann@compsat.org">vann@compsat.org</a></span>
 						</p>
 					</div>
-					<!-- <div class="avp_container">
+					<div class="avp_container">
 						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-marketing.jpg');"></div>
 						<p class="avp_text">
-							<span class="name">Jose Luis P. Bayoneta</span><br>
+							<span class="name">Aaron Stevenson T. Ho</span><br>
 							<span class="position">AVP for Corporate Relations</span><br>
-							<span class="email"><a href="mailto:chino@compsat.org">chino@compsat.org</a></span>
+							<span class="email"><a href="mailto:aaron@compsat.org">aaron@compsat.org</a></span>
 						</p>
-					</div> -->
+					</div>
 				</div>
 
 				<!-- IA/LnP/RnD -->
@@ -198,19 +198,19 @@
 					<div class="eb-info">
 						<div class="circle_icon" style="background-image: url('images/EB+AC/vp-ia.jpg');"></div>
 						<p>
-							<span class="name">Pia Melissa M. Encarnacion</span><br>
+							<span class="name">John Paulo C. Pascua</span><br>
 							<span class="position">VP for Internal Affairs</span><br>
-							<span class="email"><a href="mailto:pia@compsat.org">pia@compsat.org</a></span>
+							<span class="email"><a href="mailto:paulo@compsat.org">paulo@compsat.org</a></span>
 						</p>
 					</div>
-					<div class="avp_container">
+					<!-- <div class="avp_container">
 						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-events.jpg');"></div>
 						<p class="avp_text">
 							<span class="name">John Paulo C. Pascua</span><br>
 							<span class="position">AVP for Events</span><br>
 							<span class="email"><a href="mailto:paulo@compsat.org">paulo@compsat.org</a></span>
 						</p>
-					</div>
+					</div> -->
 					<div class="avp_container">
 						<div class="circle_icon" style="background-image: url('images/EB+AC/avp-formation.jpg');"></div>
 						<p class="avp_text">

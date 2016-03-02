@@ -555,10 +555,6 @@ div#head_content.home {
 	        justify-content: flex-start;
 }
 
-	#what_we_offer .item > img {
-		width: 100%;
-	}
-
 	#what_we_offer .item > p {
 		margin: 10px 0;
 		width: 200px;
@@ -891,10 +887,6 @@ div#head_content.home {
  			    -ms-flex-align: center;
  			        align-items: center;
  			width: 300px;
- 		}
-
- 		.org-goals img {
- 			width: 250px;
  		}
 
  		.org-goals-info h2,
